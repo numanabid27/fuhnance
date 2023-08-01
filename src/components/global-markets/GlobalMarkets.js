@@ -4,6 +4,7 @@ import data from "../data/data.json";
 
 export const GlobalMarkets = () => {
     console.log(data.tableBody)
+    
   return (
     <>
         <section className='py-12 bg-dark'>

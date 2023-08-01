@@ -45,14 +45,36 @@ body{
     position: relative;
 }
 ul.item-menu{
-    height: 0px;
-    position: absolute;
-    opacity: 0;
-    transition: 0.4s;
    
+    position: absolute;
+    visibility: hidden;
+    transition: 0.4s;
+    background-color: #0068B6;
+    opacity: 0;
+    padding: 6px;
+    left: 0;
+    right: 0;
 }
 .item-list:hover ul.item-menu{
-   height: 100px;
-    background-color: red;
+    visibility: visible;
     opacity: 1;
+    transform: translateY(7px);
+}
+.trail-btn{
+    border: 1px solid #0068B6;
+}
+.trail-btn:hover{
+    background-color:#0068B6 ;
+}
+.price_list{
+    border-top: 1px solid #27272A;
+}
+.header_list a{
+    background-color:#0068B6 ;
+    color: #fff;
+    padding: 10px 17px;
+    border-radius: 4px;
+}
+ul.stock_list{
+    padding: 14px 0 0 18px;
 }

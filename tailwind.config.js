@@ -9,7 +9,8 @@ module.exports = {
         'grey' : '#ADADAD',
         'dark' : '#242A38',
         'black' : '#000814',
-        'darkblue' : '#111827'
+        'darkblue' : '#111827',
+        'dark-color' : "#0D0D0D"
       },
       fontSize: {
         'xl': ['72px'],
