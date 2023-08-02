@@ -1,10 +1,9 @@
 import React from 'react'
 import { Heading } from '../global/heading/Heading';
-import data from "../data/data.json";
+
 
 export const GlobalMarkets = () => {
-    console.log(data.tableBody)
-    
+
   return (
     <>
         <section className='py-12 bg-dark'>
@@ -15,25 +14,25 @@ export const GlobalMarkets = () => {
                 <table>
                     <thead>
                         <tr>
-                            {
+                            {/* {
                                 data.tableHead.map((title)=>{
                                     return(
                                         <th>{title}</th>
                                     )
                                 })
-                            }
+                            } */}
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            {
+                            {/* {
                                 data.tableBody.map((title)=>{
                                     return(
                                        
                                         <td>{title.title}</td>
                                     )
                                 })
-                            }
+                            } */}
                         </tr>
                     </tbody>
                 </table>

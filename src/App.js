@@ -11,6 +11,8 @@ import { Products } from './pages/products/Products';
 import { Company } from './pages/company/Company';
 import { Forex } from './pages/forex/Forex';
 import { Options } from './pages/options/Options';
+import { About } from './pages/about/About';
+import { FuhnanceAdvantages } from './pages/fuhnance-advantages/FuhnanceAdvantages';
 
 function App() {
   return (
@@ -24,7 +26,8 @@ function App() {
             <Route path="/company" element={<Company />} exact />
             <Route path="/forex" element={<Forex />} exact />
             <Route path="/options" element={<Options />} exact />
-
+            <Route path="/about" element={<About />} exact />
+            <Route path="/feature-advantages" element={<FuhnanceAdvantages />} exact />
           </Routes>
         </Layout>
       </Router>

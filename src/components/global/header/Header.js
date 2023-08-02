@@ -119,12 +119,12 @@ const NavList = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="" className={`${chnageSyleNav} flex items-center font-normal `}>
+                            <Link to="/about" className={`${chnageSyleNav} flex items-center font-normal `}>
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link to="" className={`${chnageSyleNav} flex items-center font-normal `}>
+                            <Link to="/feature-advantages" className={`${chnageSyleNav} flex items-center font-normal `}>
                                 Feature Advantages
                             </Link>
                         </li>

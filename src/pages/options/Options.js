@@ -75,6 +75,7 @@ export const Options = () => {
                 heading={<>Option <span className='text-blue'>Trading Strategies</span></>}
                 para="Option Trading strategies to choose from on Webull, including single option, covered stock, straddle, butterfly, iron condor, etc"
                 tradeWay={tradeWay}
+                styling={false}
             />
             <Innovation
                 data={data}

@@ -78,3 +78,13 @@ ul.item-menu{
 ul.stock_list{
     padding: 14px 0 0 18px;
 }
+
+.team_container{
+    max-width: 1203px;
+    margin: 30px auto 0;
+}
+
+.hello-sec .hello:nth-child(3){
+    direction : rtl;
+    text-align: left;
+}

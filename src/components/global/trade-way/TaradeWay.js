@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heading } from '../heading/Heading'
 
-export const TaradeWay = ({tradeWay, heading,para}) => {
+export const TaradeWay = ({tradeWay, heading,para,styling}) => {
    
   return (
     <>
@@ -14,8 +14,8 @@ export const TaradeWay = ({tradeWay, heading,para}) => {
                     {
                         tradeWay.map(({img, title, para}, i)=>{
                             return(
-                                <div className='text-center' key={i.toString()}>
-                                    <img src={img} alt='' className='w-[15%] m-auto' />
+                                <div className={`${styling ? "text-left" : "text-center"}`} key={i.toString()}>
+                                    <img src={img} alt='' className={`${styling ? "m-0" : "m-auto"} w-[15%]`} />
                                     <h6 className='text-white text-[20px] py-3'>{title}</h6>
                                     <p className='text-grey text-[14px]'>{para}</p>
                                 </div>
