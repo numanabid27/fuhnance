@@ -796,6 +796,10 @@ video {
   height: 100vh;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -810,6 +814,10 @@ video {
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .w-6 {
@@ -1190,6 +1198,10 @@ video {
   text-align: center;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .text-\[14px\] {
   font-size: 14px;
 }
@@ -1236,6 +1248,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .font-extralight {
@@ -1285,6 +1301,11 @@ video {
 .text-\[\#ADADAD\] {
   --tw-text-opacity: 1;
   color: rgb(173 173 173 / var(--tw-text-opacity));
+}
+
+.text-\[\#C4C4C4\] {
+  --tw-text-opacity: 1;
+  color: rgb(196 196 196 / var(--tw-text-opacity));
 }
 
 .text-blue {
@@ -1412,6 +1433,11 @@ ul.stock_list{
 .hello-sec .hello:nth-child(3){
   direction : rtl;
   text-align: left;
+}
+
+.client_img{
+  width: 81%;
+  margin-left: auto;
 }
 
 .hover\:bg-transparent:hover {

@@ -88,3 +88,8 @@ ul.stock_list{
     direction : rtl;
     text-align: left;
 }
+
+.client_img{
+    width: 81%;
+    margin-left: auto;
+}
