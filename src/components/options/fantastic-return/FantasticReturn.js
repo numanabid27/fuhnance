@@ -37,18 +37,18 @@ export const FantasticReturn = () => {
     ]
   return (
     <>
-        <section className='bg-dark-color py-20'>
-            <div className='container m-auto'>
+        <section className='bg-dark-color md:py-20 py-16'>
+            <div className='container m-auto side-padding'>
                 <Heading heading = "Fantastic Return In Option Trading" />
-                <p className='text-white text-center text-sm pt-2'>See why we're the trading partner of choice for hundreds of thousands of traders worldwide.</p>
+                <p className='text-white text-center md:text-sm text-1x1 md:pt-0 pt-2'>See why we're the trading partner of choice for hundreds of thousands of traders worldwide.</p>
 
-                <div className='grid grid-cols-2 gap-8 mt-12'>
+                <div className='grid md:grid-cols-2 grid-cols-1 gap-8 mt-12'>
                     {
                         data.map(({img, title, desc}, i)=>{
                             return(
                                 <div key={i.toString()} className='flex gap-6 '>
                                     <div>
-                                        <img src={img} alt="" className='w-[133px]' />
+                                        <img src={img} alt="" className='lg:w-[133px] w-[193px]' />
                                     </div>
                                     <div>
                                         <h6 className='text-white font-semibold'>{title}</h6>

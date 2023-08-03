@@ -23,12 +23,12 @@ export const ProductGrid = () => {
   return (
     <>
         <section>
-            <div className='grid grid-cols-4 gap-18 container m-auto py-12'>
+            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-18 container m-auto md:py-20 py-16 side-padding'>
                 {
                     data.map(({heading, para}, i)=>{
                         return(
-                            <div className='text-center' key={i.toString()}>
-                                <h6 className='text-white text-[20px]'>{heading}</h6>
+                            <div className='text-center lg:pb-0 md:pb-3 pb-6' key={i.toString()}>
+                                <h6 className='text-white text-[20px] font-semibold'>{heading}</h6>
                                 <p className='text-white text=[14px] pt-4'>{para}</p>
                             </div>
                         )

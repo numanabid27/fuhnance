@@ -5,12 +5,12 @@ export const TaradeWay = ({tradeWay, heading,para,styling}) => {
    
   return (
     <>
-        <section className='bg-dark-color py-20'>
-            <div className='container m-auto'>
+        <section className='bg-dark-color md:py-20 py-16'>
+            <div className='container m-auto side-padding'>
                 <Heading heading={heading} />
-                <p className='text-white text-sm text-center'>{para}</p>
+                <p className='text-white md:text-sm text-1x1 pt-2 md:pt-0 text-center'>{para}</p>
 
-                <div className='grid grid-cols-3 gap-20 mt-14' >
+                <div className='grid md:grid-cols-3 grid-cols-1 lg:gap-20 gap-8 mt-14' >
                     {
                         tradeWay.map(({img, title, para}, i)=>{
                             return(

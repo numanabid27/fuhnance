@@ -32,7 +32,7 @@ export const Testimonial = () => {
                                                             <img src="./images/star.png" alt="" className='w-36' />
                                                         </div>
                                                         <div className=''>
-                                                            <img src="./images/client.png" alt="" className='client_img'/>
+                                                            <img src={clinetImg} alt="" className='client_img'/>
                                                         </div>
                                                     </div>
                                                 </SwiperSlide>

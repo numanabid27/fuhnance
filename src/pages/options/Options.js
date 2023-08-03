@@ -6,6 +6,7 @@ import { FantasticReturn } from '../../components/options/fantastic-return/Fanta
 import { TaradeWay } from '../../components/global/trade-way/TaradeWay';
 import { Innovation } from '../../components/global/innovation/Innovation';
 import { StartingFuhnance } from "../../components/global/starting-fuhnance/StartingFuhnance";
+import { GlobalMarkets } from '../../components/global/global-markets/GlobalMarkets';
 
 export const Options = () => {
     const bg = "url('./images/options.png')";
@@ -60,6 +61,42 @@ export const Options = () => {
             para: "Options trading also provides traders with leverage, which means you can control a large amount of assets with a relatively small investment."
         }
     ]
+
+    const tableData = [
+        {
+            id: 1,
+            Instrument: 'Apple Inc',
+            Sell: 0.9121,
+            Buy: 0.9121,
+            percentChange: 0.25,
+            Spread: 1.7,
+            TodayHigh: 1.9121,
+            TodayLow: 0.9121,
+            Margin: '5.0 %',
+        },
+        {
+            id: 2,
+            Instrument: 'Tesla Motors Inc',
+            Sell: 0.9121,
+            Buy: 0.9121,
+            percentChange: -0.25,
+            Spread: 1.5,
+            TodayHigh: 1.9121,
+            TodayLow: 0.9121,
+            Margin: '5.0 %',
+        },
+        {
+            id: 3,
+            Instrument: 'Gold',
+            Sell: 0.9121,
+            Buy: 0.9121,
+            percentChange: 0.25,
+            Spread: 1.7,
+            TodayHigh: 1.9121,
+            TodayLow: 0.9121,
+            Margin: '5.0 %',
+        }
+    ]
     return (
         <>
             <Hero
@@ -71,6 +108,7 @@ export const Options = () => {
             <OptionsPlay />
             <SmartInvestors />
             <FantasticReturn />
+            <GlobalMarkets tableData={tableData} heading={<></>} />
             <TaradeWay
                 heading={<>Option <span className='text-blue'>Trading Strategies</span></>}
                 para="Option Trading strategies to choose from on Webull, including single option, covered stock, straddle, butterfly, iron condor, etc"

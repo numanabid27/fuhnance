@@ -4,12 +4,12 @@ import {Heading} from "../../../components/global/heading/Heading";
 export const FuhnanceForex = () => {
   return (
     <>
-        <section className='bg-dark py-20'>
-            <div className='container m-auto '>
+        <section className='bg-dark md:py-20 py-14'>
+            <div className='container m-auto side-padding'>
                <Heading heading={<>Why <span className='text-blue'>Fuhnance Forex?</span></>} />
-               <p className='text-center text-white'>Innovative payment network new kind of money simple and secure access.</p>
+               <p className='text-center text-white md:text-sm text-1x1 md:pt-0 pt-2 '>Innovative payment network new kind of money simple and secure access.</p>
 
-               <div className='grid grid-cols-2 gap-8 mt-12 items-center'>
+               <div className='grid md:grid-cols-2 grid-cols-1 gap-8 mt-12 items-center'>
                 <div>   
                     <div className='mb-8'>
                         <h6 className='text-white text-[20px]'>Trade with a trusted broker</h6>
