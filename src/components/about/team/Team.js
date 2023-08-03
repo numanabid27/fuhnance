@@ -21,11 +21,11 @@ export const Team = () => {
     ]
   return (
     <>
-        <section className='bg-dark-color py-20'>
-            <div className='container m-auto'>
+        <section className='bg-dark-color md:py-20 py-16'>
+            <div className='container m-auto side-padding'>
                 <Heading heading={<><span className='text-blue'>Professional and Expert</span> Team Members</>} />
 
-                <div className='grid grid-cols-3 gap-12 team_container'>
+                <div className='grid md:grid-cols-3 grid-cols-1 gap-12 team_container'>
                     {
                         team.map(({img, name, designation}, i)=>{
                             return(

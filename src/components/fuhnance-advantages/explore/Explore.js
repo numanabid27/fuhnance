@@ -23,9 +23,9 @@ export const Explore = () => {
     return (
         <>
             <section className="bg-dark py-20">
-                <div className='grid grid-cols-2 gap-0 container m-auto items-center'>
+                <div className='grid grid-cols-2 gap-0 container side-padding m-auto items-center'>
                     <div>
-                        <h2 className='text-white text-xs'>Explore endless possibilities <span className='text-blue'>with Fuhnance</span></h2>
+                        <h2 className='text-white text-xs font-medium'>Explore endless possibilities <span className='text-blue'>with Fuhnance</span></h2>
                         {
                             data.map(({ title, desc }, i) => {
                                 return (

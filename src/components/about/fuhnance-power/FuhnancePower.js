@@ -4,15 +4,15 @@ export const FuhnancePower = () => {
    
   return (
     <>
-        <section className='bg-dark-black py-20'>
-            <div className='container m-auto'>
-                <div className='grid grid-cols-2 gap-12 items-center '>
+        <section className='bg-dark-black md:py-20 py-16'>
+            <div className='container m-auto side-padding'>
+                <div className='grid md:grid-cols-2 gap-12 items-center grid-cols-1'>
                     <div>
                         <div className='mb-3'>
                             <h2 className='text-white text-xs font-medium mb-5'>Fuhnance <span className='text-blue'>powers the Trade</span></h2>
                             <div className='flex gap-4 '>
                                 <div>
-                                    <img src='./images/pseudo.png' alt='' className='w-11' />
+                                    <img src='./images/pseudo.png' alt='' className='lg:w-11 w-14' />
                                 </div>
                                 <div>
                                     <h6 className='text-white text-[20px] font-medium'>Stock</h6>
@@ -24,7 +24,7 @@ export const FuhnancePower = () => {
                             
                             <div className='flex gap-4'>
                                 <div>
-                                    <img src='./images/pseudo.png' alt='' className='w-11' />
+                                    <img src='./images/pseudo.png' alt='' className='lg:w-11 w-14' />
                                 </div>
                                 <div>
                                     <h6 className='text-white text-[20px] font-medium'>Forex</h6>
@@ -36,7 +36,7 @@ export const FuhnancePower = () => {
                             
                             <div className='flex gap-4'>
                                 <div>
-                                    <img src='./images/pseudo.png' alt='' className='w-11' />
+                                    <img src='./images/pseudo.png' alt='' className='lg:w-11 w-14' />
                                 </div>
                                 <div>
                                     <h6 className='text-white text-[20px] font-medium'>Options</h6>

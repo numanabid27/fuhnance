@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
 import { Heading } from '../global/heading/Heading';
 import { Data } from '../../data/Data';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import "swiper/css";
+import "swiper/css/navigation";
+
+import { useRef } from 'react';
 
 export const Testimonial = () => {
-    console.log(Data.clientsData)
+    const swiperRef = useRef(null);
     return (
         <>
             <section className='bg-dark py-20'>
@@ -17,7 +20,11 @@ export const Testimonial = () => {
                             <Swiper
                                 spaceBetween={50}
                                 slidesPerView={1}
-                                onSwiper={(swiper) => console.log(swiper)}
+                                
+                                onBeforeInit={(swiper) => {
+                                swiperRef.current = swiper;
+                                }}
+                                className="mySwiper"
                             >
                                 {
                                     Data.clientsData.map(({ clientName, designation, desc, clinetImg }, i) => {
@@ -41,6 +48,19 @@ export const Testimonial = () => {
                                     })
                                 }
                             </Swiper>
+
+                            {/* <button
+                                className="prev-btn absolute z-10 m-auto"
+                                onClick={() => swiperRef.current?.slidePrev()}
+                                >
+                                df
+                                </button>
+                                <button
+                                className="next-btn absolute z-10 m-auto"
+                                onClick={() => swiperRef.current?.slideNext()}
+                                >
+                               fdff
+                                </button> */}
                         </div>
                     </div>
                 </div>
