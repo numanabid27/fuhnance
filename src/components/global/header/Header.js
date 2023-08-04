@@ -151,7 +151,7 @@ const NavList = () => {
 
     const location = useLocation();
     const chnageSyleNav = location.pathname === "/platform" ? "text-[#000814]" : "text-white";
-    const [active, setActive] = useState(null);
+    
     
     return (
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 md:px-0 px-4">
@@ -159,7 +159,7 @@ const NavList = () => {
             {
                 data.map(({ id, title, link, sublinks }) => {
                     return (
-                        <li className="py-3 px-1 font-normal item-list" key={id} onClick={()=>setActive(data.id)}>
+                        <li className="py-3 px-1 font-normal item-list" key={id}>
                             <Link to={link} className={`${chnageSyleNav} font-normal flex items-center `} >
                                 {title}
                                 {
@@ -171,7 +171,7 @@ const NavList = () => {
                             </Link>
                             {
                                 sublinks &&
-                                <ul className={`${active === data.id ? "block" : "hidden"} item-menu`}>
+                                <ul className="item-menu">
                                     {
                                         sublinks?.map(({ subtitle, sublink }) => {
                                             return (
