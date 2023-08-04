@@ -4,7 +4,8 @@ import { Trusted } from '../../components/fuhnance-advantages/trusted/Trusted';
 import { TaradeWay } from '../../components/global/trade-way/TaradeWay';
 import { Explore } from '../../components/fuhnance-advantages/explore/Explore';
 import { TradingPlatform } from '../../components/fuhnance-advantages/trading-platform/TradingPlatform';
-import { Testimonial } from '../../components/testimonial/Testimonial';
+import { Testimonial } from "../../components/testimonial/Testimonial";
+import { StartingFuhnance } from "../../components/global/starting-fuhnance/StartingFuhnance";
 
 export const FuhnanceAdvantages = () => {
     const bg = "url('./images/about.png')";
@@ -45,7 +46,7 @@ export const FuhnanceAdvantages = () => {
         <>
             <Hero
                 bg={bg}
-                heading={<><span className='text-blue'>Fuhnance</span>Advantages</>}
+                heading={<><span className='text-blue'>Fuhnance</span> Advantages</>}
                 para="Fuhnance has a variety of features that make it the best place to start trading"
                 height={false}
             />
@@ -58,6 +59,7 @@ export const FuhnanceAdvantages = () => {
             <Explore />
             <TradingPlatform />
             <Testimonial />
+            <StartingFuhnance />
         </>
     )
 }

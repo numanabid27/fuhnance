@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from 'react-router-dom';
 import { IoIosArrowDown } from 'react-icons/io';
 import {
@@ -10,7 +10,11 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     const [openNav, setOpenNav] = React.useState(false);
+    const [isOpen, setIsOpen]  = useState(false);
 
+    const handleClick = () =>{
+        setIsOpen(!isOpen);
+    }
     React.useEffect(() => {
         window.addEventListener(
             "resize",
@@ -80,7 +84,7 @@ export default function Header() {
                 </div>
                 <MobileNav open={openNav}>
                     <div className="container mx-auto">
-                        {<NavList />}
+                        {<NavList handleClick={handleClick} isOpen={isOpen} />}
                     </div>
                 </MobileNav>
             </Navbar>
@@ -90,6 +94,7 @@ export default function Header() {
 
 
 const NavList = () => {
+   
     const location = useLocation();
     const chnageSyleNav = location.pathname === "/platform" ? "text-[#000814]" : "text-white";
     return (
@@ -114,8 +119,8 @@ const NavList = () => {
                     </li>
                 </ul>
             </li>
-            <li className="py-3 px-1 font-normal item-list">
-                <Link to="/products" className={`${chnageSyleNav} font-normal flex items-center `}>
+            <li className="py-3 px-1 font-normal item-list" >
+                <Link to="/products" className={`${chnageSyleNav} font-normal flex items-center `} >
                     Products
                     <span className="ml-1">
                         <IoIosArrowDown />
@@ -139,14 +144,14 @@ const NavList = () => {
                     </li>
                 </ul>
             </li>
-            <li className="py-3 px-1 font-normal item-list">
+            <li className="py-3 px-1 font-normal item-list" >
                 <Link to="/company" className={`${chnageSyleNav} flex items-center font-normal`}>
                     Company
                     <span className="ml-1">
                         <IoIosArrowDown />
                     </span>
                 </Link>
-                <ul className="item-menu ">
+                <ul className="item-menu">
                     <li className="pb-1">
                         <Link to="" className={`${chnageSyleNav} flex items-center font-normal `}>
                             Price

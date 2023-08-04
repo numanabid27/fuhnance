@@ -22,16 +22,16 @@ export const Explore = () => {
     ]
     return (
         <>
-            <section className="bg-dark py-20">
-                <div className='grid grid-cols-2 gap-0 container side-padding m-auto items-center'>
+            <section className="bg-dark md:py-20 py-16">
+                <div className='grid md:grid-cols-2 grid-cols-1 gap-0 container side-padding m-auto items-center'>
                     <div>
-                        <h2 className='text-white text-xs font-medium'>Explore endless possibilities <span className='text-blue'>with Fuhnance</span></h2>
+                        <h2 className='text-white md:text-xs text-md font-medium'>Explore endless possibilities <span className='text-blue'>with Fuhnance</span></h2>
                         {
                             data.map(({ title, desc }, i) => {
                                 return (
                                     <div key={i.toString()} className='flex gap-7 mt-7'>
-                                        <div className='w-[3.5%]'>
-                                            <img src='./images/pseudo.png' alt='' className='w-9' />
+                                        <div className='md:w-[3.5%] w-[6%]'>
+                                            <img src='./images/pseudo.png' alt='' className='md:w-9 w-11' />
                                         </div>
                                         <div className='w-[82%]'>
                                             <h6 className='text-white text-[20px] font-medium'>{title}</h6>
@@ -42,7 +42,7 @@ export const Explore = () => {
                             })
                         }
                     </div>
-                    <div>
+                    <div className='mt-6 md:mt-0'>
                         <img src='./images/square.png' alt='' />
                     </div>
                 </div>

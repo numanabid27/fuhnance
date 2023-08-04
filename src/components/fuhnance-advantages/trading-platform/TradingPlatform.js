@@ -24,16 +24,16 @@ export const TradingPlatform = () => {
   
     return (
         <>
-            <section className='dark-color py-20 hello-sec'>
+            <section className='dark-color md:py-20 py-16 hello-sec'>
                 <div className='container m-auto side-padding'>
-                    <h2 className='text-white text-xs font-medium'>World class <span className='text-blue'>Trading</span> platform</h2>
+                    <h2 className='text-white md:text-xs text-md font-medium'>World class <span className='text-blue'>Trading</span> platform</h2>
 
                     {
                         data.map((items, i) => {
                             return (
-                                <div className="grid grid-cols-2 gap-24 items-center hello" key={i.toString()} >
+                                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-12 items-center trade mt-4 md:mt-0" key={i.toString()} >
                                     <div>
-                                        <h6 className='text-white text-[20px]'>{items.title}</h6>
+                                        <h6 className='text-white text-[20px] mb-2 md:mb-0'>{items.title}</h6>
                                         <p className='text-white font-extralight'>{items.desc}</p>
                                         <p className='text-white font-extralight'>{items.desc2}</p>
                                     </div>

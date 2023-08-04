@@ -100,7 +100,7 @@ body {
         margin: 30px auto 0;
     }
 
-    .hello-sec .hello:nth-child(3) {
+    .hello-sec .trade:nth-child(3) {
         direction: rtl;
         text-align: left;
     }
@@ -118,8 +118,57 @@ body {
     .banner_img {
         transform: translateY(54px);
     }
+    .quote_img img{
+        filter: brightness(0.5);
+    }
+    .slide_row{
+        margin: 0 auto;
+        max-width: 1219px;
+    }
+    .slide-col1{
+        width: 38vw;
+    }
+    .slide-col2{
+        width: 41vw;
+    }
+    .quote_img{
+        transform: translateY(-18px);
+    }
+    .testimonial_Sec{
+        position: relative;
+    }
+    .slide_Bg{
+        width: 100%;
+        background-color: #0D0D0D;
+        position: absolute;
+        height: 58vh;
+        margin-top: 84px;
+    }
+    .slide_arrows{
+        position: relative;
+        z-index: 9;
+        bottom: 11vw;
+        right: 0;
+        left: -12vw;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-
+    @media screen and (max-width:1258px){
+        .slide_Bg{
+            height: 62vh;
+            margin-top: 73px;
+        }  
+        .slide-col1 {
+            width: 50vw;
+        }
+        .slide_arrows {
+            left: -4%;
+        }
+        .slide-col2 {
+            width: 50vw;
+        }
+    }
     @media screen and (max-width:900px){
         .global_table{
             overflow-x: scroll ;
@@ -143,7 +192,43 @@ body {
         .header_list {
             width: fit-content;
         }
+        .slide_row{
+            flex-direction: column;
+        }
+        .quote_img{
+            display: none;
+        }
+        .slide_Bg{
+            display: none;
+        }
+        .slide-col1{
+            width: 100vw;
+        }
+        .mobile_Slide{
+            background-color: #0D0D0D !important;
+        }
+        .client_img {
+            width: 135px;
+            height: 136px;
+            border-radius: 50%;
+            margin: -31px auto 0;
+        }
+        .slide_arrows {
+            left: 0%;
+            bottom: -5vw;
+        }
+        ul.item-menu {
+            visibility: visible;
+            opacity: 1;
+            transform: unset;
+            position: unset;
+        }
+    
+        .item-list:hover ul.item-menu {
+            visibility: visible;
+            opacity: 1;
+            transform: unset;
+        }
     }
-
 
 }

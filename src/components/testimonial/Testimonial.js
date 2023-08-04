@@ -2,65 +2,72 @@ import React from 'react';
 import { Heading } from '../global/heading/Heading';
 import { Data } from '../../data/Data';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import { useRef } from "react";
+
 import "swiper/css";
 import "swiper/css/navigation";
-
-import { useRef } from 'react';
 
 export const Testimonial = () => {
     const swiperRef = useRef(null);
     return (
         <>
-            <section className='bg-dark py-20'>
+            <section className='bg-dark md:py-20 py-16 testimonial_Sec'>
                 <div>
                     <Heading heading="Testimonial" />
-
-                    <div className='bg-dark-color relative py-8 px-5'>
+                    <div className='slide_Bg'></div>
+                    <div className='pt-8 px-5 '>
                         <div className='container m-auto'>
                             <Swiper
-                                spaceBetween={50}
+                                spaceBetween={10}
                                 slidesPerView={1}
-                                
+                                loop={true}
                                 onBeforeInit={(swiper) => {
-                                swiperRef.current = swiper;
+                                    swiperRef.current = swiper;
                                 }}
+                                modules={[Navigation]}
                                 className="mySwiper"
                             >
                                 {
                                     Data.clientsData.map(({ clientName, designation, desc, clinetImg }, i) => {
                                         return (
-                                            <div>
-                                                <SwiperSlide key={i.toString()}>
-                                                    <div className='flex items-center justify-between'>
-                                                        <div className='p-5 w-1/3 bg-dark'>
-                                                            <h4 className='text-white font-extrabold'>{clientName}</h4>
-                                                            <p className='text-[#C4C4C4] font-extralight text-[12px]'>{designation}</p>
-                                                            <h6 className='text-[#C4C4C4] font-extralight text-[14px]'>{desc}</h6>
-                                                            <img src="./images/star.png" alt="" className='w-36' />
+                                            <SwiperSlide key={i.toString()}>
+                                                <div className='flex items-center justify-between slide_row'>
+                                                    <div className='flex slide-col1'>
+                                                        <div className='quote_img'>
+                                                            <img src="./images/quote.png" alt="" className='w-16' />
                                                         </div>
-                                                        <div className=''>
-                                                            <img src={clinetImg} alt="" className='client_img'/>
+                                                        <div className='p-5 w-full bg-dark ml-4 mobile_Slide'>
+                                                            <h4 className='text-white font-extrabold'>{clientName}</h4>
+                                                            <p className='text-[#C4C4C4] font-extralight text-[12px] pt-1'>{designation}</p>
+                                                            <h6 className='text-[#C4C4C4] font-extralight text-[14px] pt-5 pb-5'>{desc}</h6>
+                                                            <img src="./images/star.png" alt="" className='w-36 pb-8' />
                                                         </div>
                                                     </div>
-                                                </SwiperSlide>
-                                            </div>
+                                                    <div className='slide-col2'>
+                                                        <img src={clinetImg} alt="" className='client_img' />
+                                                    </div>
+                                                </div>
+                                            </SwiperSlide>
                                         )
                                     })
                                 }
                             </Swiper>
 
-                            {/* <button
-                                className="prev-btn absolute z-10 m-auto"
-                                onClick={() => swiperRef.current?.slidePrev()}
+                            <div className='slide_arrows'>
+                                <button
+                                    className="prev-btn z-10 mr-2"
+                                    onClick={() => swiperRef.current?.slidePrev()}
                                 >
-                                df
+                                    <img src="./images/leftArrow.png" alt=""/>
                                 </button>
                                 <button
-                                className="next-btn absolute z-10 m-auto"
-                                onClick={() => swiperRef.current?.slideNext()}
+                                    className="next-btn z-10 m-auto"
+                                    onClick={() => swiperRef.current?.slideNext()}
                                 >
-                               fdff
-                                </button> */}
+                                    <img src="./images/rightArrow.png" alt=""/>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
