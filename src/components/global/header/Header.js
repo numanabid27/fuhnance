@@ -101,7 +101,7 @@ const NavList = () => {
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 md:px-0 px-4">
             <li className="py-3 px-1 font-normal">
                 <Link to="/" className={`${chnageSyleNav} flex items-center font-normal`}>
-                    Homes
+                    Home
                 </Link>
             </li>
             <li className="py-3 px-1 font-normal item-list">
@@ -145,7 +145,7 @@ const NavList = () => {
                 </ul>
             </li>
             <li className="py-3 px-1 font-normal item-list" >
-                <Link to="/company" className={`${chnageSyleNav} flex items-center font-normal`}>
+                <Link to="#" className={`${chnageSyleNav} flex items-center font-normal`}>
                     Company
                     <span className="ml-1">
                         <IoIosArrowDown />
@@ -153,7 +153,7 @@ const NavList = () => {
                 </Link>
                 <ul className="item-menu">
                     <li className="pb-1">
-                        <Link to="" className={`${chnageSyleNav} flex items-center font-normal `}>
+                        <Link to="/company" className={`${chnageSyleNav} flex items-center font-normal `}>
                             Price
                         </Link>
                     </li>

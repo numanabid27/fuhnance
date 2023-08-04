@@ -12,15 +12,15 @@ export const Footer = () => {
                         </div>
                         <div className='md:w-1/4 w-full'>
                             <h6 className='text-white text-[20px] font-semibold pb-4'>Platform</h6>
-                            <a href='#' className='text-white block pb-3 font-light'>Stcoks</a>
-                            <a href='#' className='text-white block pb-3 font-light'>Forex</a>
-                            <a href='#' className='text-white block pb-3 font-light'>Options</a>
+                            <a href='/products' className='text-white block pb-3 font-light'>Stcoks</a>
+                            <a href='/forex' className='text-white block pb-3 font-light'>Forex</a>
+                            <a href='/options' className='text-white block pb-3 font-light'>Options</a>
                         </div>
                         <div className='md:w-1/4 w-full'>
                             <h6 className='text-white text-[20px] font-semibold pb-4'>Company</h6>
-                            <a href='#' className='text-white block pb-3 font-light'>About</a>
-                            <a href='#' className='text-white block pb-3 font-light'>Fuhnance Advantages</a>
-                            <a href='#' className='text-white block pb-3 font-light'>Pricing</a>
+                            <a href='/about' className='text-white block pb-3 font-light'>About</a>
+                            <a href='/feature-advantages' className='text-white block pb-3 font-light'>Fuhnance Advantages</a>
+                            <a href='/company' className='text-white block pb-3 font-light'>Pricing</a>
                         </div>
                         <div className='md:w-1/4 w-full'>
                             <div>
