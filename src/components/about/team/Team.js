@@ -9,12 +9,12 @@ export const Team = () => {
             designation : "Forex Expert"
         },
         {
-            img:"./images/team1.png",
+            img:"./images/girls.png",
             name:"Jack Alexander",
             designation : "Stock Expert "
         },
         {
-            img:"./images/team1.png",
+            img:"./images/onee.png",
             name:"William James",
             designation : "Option Expert"
         },

@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     const [openNav, setOpenNav] = React.useState(false);
-    const [isOpen, setIsOpen]  = useState(false);
-
-    const handleClick = () =>{
+    const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
+    const handleClick = () => {
         setIsOpen(!isOpen);
     }
     React.useEffect(() => {
@@ -20,10 +20,9 @@ export default function Header() {
             "resize",
             () => window.innerWidth >= 960 && setOpenNav(false),
         );
-    }, []);
+        setOpenNav(false)
+    }, [location.pathname]);
 
-    const location = useLocation();
-    const chnageSyleNav = location.pathname === "/platform" ? "text-[#000814]" : "text-white";
     return (
         <header>
             <Navbar className={`${location.pathname === "/platform" ? "bg-white" : "bg-darkblue"}`}>
@@ -55,7 +54,7 @@ export default function Header() {
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
                                 strokeWidth={2}
-                                style={{color:location.pathname === "/platform" && "black"}}
+                                style={{ color: location.pathname === "/platform" && "black" }}
                             >
                                 <path
                                     strokeLinecap="round"
@@ -70,8 +69,8 @@ export default function Header() {
                                 fill='none'
                                 stroke="currentColor"
                                 strokeWidth={2}
-                                style={{color:location.pathname === "/platform" && "black"}}
-                                
+                                style={{ color: location.pathname === "/platform" && "black" }}
+
                             >
                                 <path
                                     strokeLinecap="round"
@@ -94,81 +93,103 @@ export default function Header() {
 
 
 const NavList = () => {
-   
+
+    const data = [
+        {
+            id: 1,
+            title: "Home",
+            link: "/"
+        },
+        {
+            id: 2,
+            title: "Platform",
+            sublinks: [
+                {
+                    subtitle: "Overview",
+                    sublink: "/platform"
+                }
+            ]
+
+        },
+        {
+            id: 3,
+            title: "Products",
+            sublinks: [
+                {
+                    subtitle: "Stocks",
+                    sublink: "/products"
+                },
+                {
+                    subtitle: "Forex",
+                    sublink: "/forex"
+                },
+                {
+                    subtitle: "Options",
+                    sublink: "/options"
+                }
+            ]
+        },
+        {
+            id: 4,
+            title: "Company",
+            sublinks: [
+                {
+                    subtitle: "Price",
+                    sublink: "/company"
+                },
+                {
+                    subtitle: "About",
+                    sublink: "/about"
+                },
+                {
+                    subtitle: "Feature Adnavtages",
+                    sublink: "/feature-advantages"
+                }
+            ]
+        },
+    ]
+
     const location = useLocation();
     const chnageSyleNav = location.pathname === "/platform" ? "text-[#000814]" : "text-white";
+    const [active, setActive] = useState(null);
+    
     return (
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 md:px-0 px-4">
-            <li className="py-3 px-1 font-normal">
-                <Link to="/" className={`${chnageSyleNav} flex items-center font-normal`}>
-                    Home
-                </Link>
-            </li>
-            <li className="py-3 px-1 font-normal item-list">
-                <Link to="#" className={`${chnageSyleNav} flex items-center font-normal `}>
-                    Platform
-                    <span className="ml-1">
-                        <IoIosArrowDown />
-                    </span>
-                </Link>
-                <ul className="item-menu">
-                    <li className="pb-1">
-                        <Link to="/platform" className={`${chnageSyleNav} flex items-center font-normal`}>
-                            Overview
-                        </Link>
-                    </li>
-                </ul>
-            </li>
-            <li className="py-3 px-1 font-normal item-list" >
-                <Link to="/products" className={`${chnageSyleNav} font-normal flex items-center `} >
-                    Products
-                    <span className="ml-1">
-                        <IoIosArrowDown />
-                    </span>
-                </Link>
-                <ul className="item-menu">
-                    <li className="pb-1">
-                        <Link to="/products" className={`${chnageSyleNav} flex items-center font-normal`}>
-                            Stocks
-                        </Link>
-                    </li>
-                    <li className="pb-1">
-                        <Link to="/forex" className={`${chnageSyleNav} flex items-center font-normal `}>
-                            Forex
-                        </Link>
-                    </li>
-                    <li className="pb-1">
-                        <Link to="/options" className={`${chnageSyleNav} flex items-center font-normal `}>
-                            Option
-                        </Link>
-                    </li>
-                </ul>
-            </li>
-            <li className="py-3 px-1 font-normal item-list" >
-                <Link to="#" className={`${chnageSyleNav} flex items-center font-normal`}>
-                    Company
-                    <span className="ml-1">
-                        <IoIosArrowDown />
-                    </span>
-                </Link>
-                <ul className="item-menu">
-                    <li className="pb-1">
-                        <Link to="/company" className={`${chnageSyleNav} flex items-center font-normal `}>
-                            Price
-                        </Link>
-                    </li>
-                    <li className="pb-1">
-                        <Link to="/about" className={`${chnageSyleNav} flex items-center font-normal `}>
-                            About
-                        </Link>
-                    </li>
-                    <li className="pb-1">
-                        <Link to="/feature-advantages" className={`${chnageSyleNav} flex items-center font-normal `}>
-                            Feature Advantages
-                        </Link>
-                    </li>
-                </ul>
-            </li>
+
+            {
+                data.map(({ id, title, link, sublinks }) => {
+                    return (
+                        <li className="py-3 px-1 font-normal item-list" key={id} onClick={()=>setActive(data.id)}>
+                            <Link to={link} className={`${chnageSyleNav} font-normal flex items-center `} >
+                                {title}
+                                {
+                                    sublinks && <span className="ml-1">
+                                        <IoIosArrowDown />
+                                    </span>
+                                }
+
+                            </Link>
+                            {
+                                sublinks &&
+                                <ul className={`${active === data.id ? "block" : "hidden"} item-menu`}>
+                                    {
+                                        sublinks?.map(({ subtitle, sublink }) => {
+                                            return (
+                                                <li className="pb-1">
+                                                    <Link to={sublink} className={`${chnageSyleNav} flex items-center font-normal`}>
+                                                        {subtitle}
+                                                    </Link>
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            }
+
+                        </li>
+                    )
+                })
+            }
             <li className="py-3 px-1 font-normal header_list">
                 <Link to="/company" className="flex items-center font-normal text-white">
                     Get Started

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
@@ -12,21 +13,21 @@ export const Footer = () => {
                         </div>
                         <div className='md:w-1/4 w-full'>
                             <h6 className='text-white text-[20px] font-semibold pb-4'>Platform</h6>
-                            <a href='/products' className='text-white block pb-3 font-light'>Stcoks</a>
-                            <a href='/forex' className='text-white block pb-3 font-light'>Forex</a>
-                            <a href='/options' className='text-white block pb-3 font-light'>Options</a>
+                            <Link to='/products' className='text-white block pb-3 font-light'>Stcoks</Link>
+                            <Link to='/forex' className='text-white block pb-3 font-light'>Forex</Link>
+                            <Link to='/options' className='text-white block pb-3 font-light'>Options</Link>
                         </div>
                         <div className='md:w-1/4 w-full'>
                             <h6 className='text-white text-[20px] font-semibold pb-4'>Company</h6>
-                            <a href='/about' className='text-white block pb-3 font-light'>About</a>
-                            <a href='/feature-advantages' className='text-white block pb-3 font-light'>Fuhnance Advantages</a>
-                            <a href='/company' className='text-white block pb-3 font-light'>Pricing</a>
+                            <Link to='/about' className='text-white block pb-3 font-light'>About</Link>
+                            <Link to='/feature-advantages' className='text-white block pb-3 font-light'>Fuhnance Advantages</Link>
+                            <Link to='/company' className='text-white block pb-3 font-light'>Pricing</Link>
                         </div>
                         <div className='md:w-1/4 w-full'>
                             <div>
                                 <h6 className='text-white text-[20px] font-semibold pb-4'>Contact Us</h6>
-                                <a href='mailto:contact@example.com' className='text-white block pb-3 font-light'>contact@example.com</a>
-                                <a href='tel:+92-300-848-8985' className='text-white block pb-3 font-light'>+92-300-848-8985</a>
+                                <Link to='mailto:contact@example.com' className='text-white block pb-3 font-light'>contact@example.com</Link>
+                                <Link to='tel:+92-300-848-8985' className='text-white block pb-3 font-light'>+92-300-848-8985</Link>
                             </div>
                             <div className='pt-4'>
                                 <h6 className='text-white text-[20px] font-semibold pb-4'>Follow Us On</h6>
@@ -53,9 +54,9 @@ export const Footer = () => {
                     </div>
                     <div className='flex justify-between m-auto container py-5 footer_bottom'>
                         <div className='bottom-list'>
-                            <a href='#' className='text-white text-[14px] mr-2'>Cookies Policy</a>
-                            <a href='#' className='text-white text-[14px] mr-2'>Privacy Policy</a>
-                            <a href='#' className='text-white text-[14px] mr-2'>Terms & Conditions</a>
+                            <Link to='#' className='text-white text-[14px] mr-2'>Cookies Policy</Link>
+                            <Link to='#' className='text-white text-[14px] mr-2'>Privacy Policy</Link>
+                            <Link to='#' className='text-white text-[14px] mr-2'>Terms & Conditions</Link>
                         </div>
                         <div>
                             <p className='text-white text-[14px] text-center md:text-right md:pt-0 pt-3'>© 2023, Fuhnance. All Right Reserved</p>
