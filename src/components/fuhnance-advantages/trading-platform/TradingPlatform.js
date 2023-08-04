@@ -16,7 +16,7 @@ export const TradingPlatform = () => {
         },
         {
             title: "Derivatives",
-            desc: "Users wishing to mitigate the risks associated with the volatility of Digital Tokens may trade Derivative Products on the Derivatives Site. Perpetual contracts are already available and further Derivative Products are under development.",
+            desc: "Users wishin to mitigate the risks associated with the volatility of Digital Tokens may trade Derivative Products on the Derivatives Site. Perpetual contracts are already available and further Derivative Products are under development.",
             desc2: "Derivative Products can be traded using a Derivative Wallet credited with USDt0, a Digital Token which can be obtained by converting USDt, as explained in more details on our Knowledge Base.",
             img: "./images/vectorr.png"
         },
