@@ -43,7 +43,7 @@ export const Explore = () => {
                         }
                     </div>
                     <div className='mt-6 md:mt-0'>
-                        <img src='./images/square.png' alt='' />
+                        <img src='./images/Square.png' alt='' />
                     </div>
                 </div>
             </section>
