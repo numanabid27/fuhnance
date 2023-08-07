@@ -26,7 +26,7 @@ export const Footer = () => {
                         <div className='md:w-1/4 w-full'>
                             <div>
                                 <h6 className='text-white text-[20px] font-semibold pb-4'>Contact Us</h6>
-                                <Link to='mailto:contact@example.com' className='text-white block pb-3 font-light'>contact@example.com</Link>
+                                <Link to='mailto:contact@exaple.com' className='text-white block pb-3 font-light'>contact@example.com</Link>
                                 <Link to='tel:+92-300-848-8985' className='text-white block pb-3 font-light'>+92-300-848-8985</Link>
                             </div>
                             <div className='pt-4'>
