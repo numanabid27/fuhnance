@@ -24,11 +24,7 @@ export default function Header() {
     }, [location.pathname]);
 
     const data = [
-        {
-            id: 1,
-            title: "Home",
-            link: "/"
-        },
+
         {
             id: 2,
             title: "Platform",
@@ -77,7 +73,7 @@ export default function Header() {
             ]
         },
     ]
-
+    const chnageSyleNav = location.pathname === "/platform" ? "text-[#000814]" : "text-white";
     return (
         <header>
             <Navbar className={`${location.pathname === "/platform" ? "bg-white" : "bg-darkblue"}`}>
@@ -95,6 +91,11 @@ export default function Header() {
                     </div>
                     <div className="hidden lg:block">
                         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 md:px-0 px-4">
+                            <li className="py-3 px-1 font-normal">
+                                <Link to="/" className={`${chnageSyleNav} font-normal flex items-center `}>
+                                    Home
+                                </Link>
+                            </li>
                             {
                                 data.map((t, i) => {
                                     return (
@@ -160,6 +161,11 @@ export default function Header() {
                 <MobileNav open={openNav} className={`${openNav ? "aa" : "bb"}`}>
                     <div className="container mx-auto">
                         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 md:px-0 px-4">
+                            <li className="py-3 px-1 font-normal">
+                                <Link to="/" className={`${chnageSyleNav} font-normal flex items-center `}>
+                                    Home
+                                </Link>
+                            </li>
                             {
                                 data.map((t, i) => {
                                     return (
