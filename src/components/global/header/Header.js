@@ -7,11 +7,13 @@ import {
     IconButton,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { useDimensions } from "../../../hooks/use-dimensions";
 
 export default function Header() {
     const [openNav, setOpenNav] = React.useState(false);
     const location = useLocation();
     const [isOpen, setIsOpen] = useState(false);
+
 
     React.useEffect(() => {
         window.addEventListener(
@@ -92,19 +94,26 @@ export default function Header() {
                         }
                     </div>
                     <div className="hidden lg:block">
-                        {
-                            data.map((t, i) => {
-                                return (
-                                    <NavList
-                                        key={i.toString()}
-                                        title={t.title}
-                                        sublinks={t.sublinks}
-                                        subtitle={t.subtitle}
-                                        sublink={t.sublink}
-                                    />
-                                )
-                            })
-                        }
+                        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 md:px-0 px-4">
+                            {
+                                data.map((t, i) => {
+                                    return (
+                                        <NavList
+                                            key={i.toString()}
+                                            title={t.title}
+                                            sublinks={t.sublinks}
+                                            subtitle={t.subtitle}
+                                            sublink={t.sublink}
+                                        />
+                                    )
+                                })
+                            }
+                            <li className="py-3 px-1 font-normal header_list">
+                                <Link to="/company" className="flex items-center font-normal text-white">
+                                    Get Started
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
 
                     <IconButton
@@ -150,26 +159,33 @@ export default function Header() {
                 </div>
                 <MobileNav open={openNav}>
                     <div className="container mx-auto">
-                        {
-                            data.map((t, i) => {
-                                return (
-                                    <NavList
-                                        key={i.toString()}
-                                        isOpen={isOpen === i ? true : false}
-                                        title={t.title}
-                                        sublinks={t.sublinks}
-                                        subtitle={t.subtitle}
-                                        sublink={t.sublink}
-                                        handleClick={() => {
-                                            if (isOpen !== i) {
-                                                return setIsOpen(i)
-                                            }
-                                            setIsOpen(false)
-                                        }}
-                                    />
-                                )
-                            })
-                        }
+                        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 md:px-0 px-4">
+                            {
+                                data.map((t, i) => {
+                                    return (
+                                        <NavList
+                                            key={i.toString()}
+                                            isOpen={isOpen === i ? true : false}
+                                            title={t.title}
+                                            sublinks={t.sublinks}
+                                            subtitle={t.subtitle}
+                                            sublink={t.sublink}
+                                            handleClick={() => {
+                                                if (isOpen !== i) {
+                                                    return setIsOpen(i)
+                                                }
+                                                setIsOpen(false)
+                                            }}
+                                        />
+                                    )
+                                })
+                            }
+                            <li className="py-3 px-1 font-normal header_list">
+                                <Link to="/company" className="flex items-center font-normal text-white">
+                                    Get Started
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                 </MobileNav>
             </Navbar>
@@ -178,40 +194,73 @@ export default function Header() {
 }
 
 
-const NavList = ({ id, title, link, sublinks, sublink, subtitle, isOpen, handleClick }) => {
-
+const NavList = ({ id, title, link, sublinks, sublink, subtitle, isOpen, handleClick, }) => {
+    const { width } = useDimensions();
     const location = useLocation();
     const chnageSyleNav = location.pathname === "/platform" ? "text-[#000814]" : "text-white";
 
     return (
-        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 md:px-0 px-4">
+        <>
+            {
+                width && width < 600 ?
+                    <>
+                        <li className="py-3 px-1 font-normal item-list" onClick={handleClick}>
+                            <Link to={link} className={`${chnageSyleNav} font-normal flex items-center `} >
+                                {title}
+                                <span className="ml-1">
+                                    <IoIosArrowDown />
+                                </span>
+                            </Link>
+                            <ul className={`${isOpen ? "block" : "hidden"}`}>
+                                {
+                                    sublinks?.map(({ sublink, subtitle }, i) => {
+                                        return (
+                                            <li className="pb-1" key={i.toString()}>
+                                                <Link to={sublink} className={`${chnageSyleNav} flex items-center font-normal`}>
+                                                    {subtitle}
+                                                </Link>
+                                            </li>
+                                        )
+                                    })
+                                }
 
-            <li className="py-3 px-1 font-normal item-list" onClick={handleClick}>
-                <Link to={link} className={`${chnageSyleNav} font-normal flex items-center `} >
-                    {title}
-                    <span className="ml-1">
-                        <IoIosArrowDown />
-                    </span>
-                </Link>
-                <ul className={`${isOpen ? "block" : "hidden"}`}>
-                    {
-                        sublinks?.map(({ sublink, subtitle }, i) => {
-                            return (
-                                <li className="pb-1" key={i.toString()}>
-                                    <Link to={sublink} className={`${chnageSyleNav} flex items-center font-normal`}>
-                                        {subtitle}
-                                    </Link>
-                                </li>
-                            )
-                        })
-                    }
-                </ul>
-            </li>
-            {/* <li className="py-3 px-1 font-normal header_list">
-                <Link to="/company" className="flex items-center font-normal text-white">
-                    Get Started
-                </Link>
-            </li> */}
-        </ul>
+                            </ul>
+                        </li>
+                    </>
+                    :
+                    <>
+                        <li className="py-3 px-1 font-normal item-list">
+                            <Link to={link} className={`${chnageSyleNav} font-normal flex items-center `} >
+                                {title}
+                                {
+                                    sublinks &&
+                                    <span className="ml-1">
+                                        <IoIosArrowDown />
+                                    </span>
+                                }
+                            </Link>
+                            {
+                                sublinks &&
+                                <ul className="item-menu">
+                                    {
+                                        sublinks?.map(({ sublink, subtitle }, i) => {
+                                            return (
+                                                <li className="pb-1" key={i.toString()}>
+                                                    <Link to={sublink} className={`${chnageSyleNav} flex items-center font-normal`}>
+                                                        {subtitle}
+                                                    </Link>
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            }
+
+                        </li>
+
+                    </>
+            }
+
+        </>
     )
 }
