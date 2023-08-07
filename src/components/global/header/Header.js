@@ -202,7 +202,7 @@ const NavList = ({ id, title, link, sublinks, sublink, subtitle, isOpen, handleC
     return (
         <>
             {
-                width && width < 600 ?
+                width && width < 700 ?
                     <>
                         <li className="py-3 px-1 font-normal item-list" onClick={handleClick}>
                             <Link to={link} className={`${chnageSyleNav} font-normal flex items-center `} >
