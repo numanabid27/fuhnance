@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Banner } from '../../components/platform/banner/Banner'
 import { ChooseFuhnance } from "../../components/global/choose-fuhnance/ChooseFuhnance";
 import { BiggestMoment } from "../../components/home/biggest-moments/BiggestMoment";
@@ -7,6 +7,9 @@ import { OutsourcingBenificts } from "../../components/home/outsource-benificts/
 import { StartingFuhnance } from "../../components/global/starting-fuhnance/StartingFuhnance";
 
 export const Platofrm = () => {
+  useEffect(()=>{
+    document.title = "Platform";
+  })
   return (
     <>
       <Banner />

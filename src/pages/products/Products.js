@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { Hero } from "../../components/global/hero/Hero";
 import { MarketResearch } from '../../components/products/market-research/MarketResearch';
 import { ProductGrid } from '../../components/products/product-grid/ProductGrid';
@@ -122,7 +122,11 @@ export const Products = () => {
         TodayLow: 0.9121,
         Margin: '5.0 %',
     },
-]
+  ]
+
+  useEffect(()=>{
+    document.title = "Stocks"
+  }, [])
   return (
     <>
       <Hero

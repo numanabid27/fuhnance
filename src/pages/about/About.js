@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Hero } from "../../components/global/hero/Hero";
 import { Counter } from '../../components/counter/Counter';
 import { Innovation } from '../../components/global/innovation/Innovation';
@@ -8,6 +8,10 @@ import { Team } from '../../components/about/team/Team';
 import { StartingFuhnance } from "../../components/global/starting-fuhnance/StartingFuhnance";
 
 export const About = () => {
+
+    useEffect(()=>{
+      document.title = "About"
+    },[])
     const bg = "url('./images/about.png')";
     const data = [
         {

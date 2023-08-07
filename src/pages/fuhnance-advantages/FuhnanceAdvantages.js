@@ -6,6 +6,7 @@ import { Explore } from '../../components/fuhnance-advantages/explore/Explore';
 import { TradingPlatform } from '../../components/fuhnance-advantages/trading-platform/TradingPlatform';
 import { Testimonial } from "../../components/testimonial/Testimonial";
 import { StartingFuhnance } from "../../components/global/starting-fuhnance/StartingFuhnance";
+import { useEffect } from 'react';
 
 export const FuhnanceAdvantages = () => {
     const bg = "url('./images/about.png')";
@@ -42,6 +43,10 @@ export const FuhnanceAdvantages = () => {
         }
 
     ]
+
+    useEffect(()=>{
+        document.title = "Advantages"
+      },[])
     return (
         <>
             <Hero

@@ -5,6 +5,7 @@ import { FuhnanceForex } from '../../components/forex/fuhnance-forex/FuhnanceFor
 import { TaradeWay } from '../../components/global/trade-way/TaradeWay';
 import { StartingFuhnance } from "../../components/global/starting-fuhnance/StartingFuhnance";
 import { GlobalMarkets } from '../../components/global/global-markets/GlobalMarkets';
+import { useEffect } from 'react';
 
 export const Forex = () => {
   const bg = "url('./images/forex.png')";
@@ -143,7 +144,11 @@ export const Forex = () => {
         TodayLow: 0.9121,
         Margin: '5.0 %',
     },
-]
+  ]
+
+  useEffect(()=>{
+    document.title = "Forex"
+  },[])
   return (
     <>
       <Hero

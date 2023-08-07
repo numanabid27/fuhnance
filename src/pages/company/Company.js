@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Hero } from "../../components/global/hero/Hero";
 import { Pricing } from '../../components/company/pricing/Pricing';
 import { StartingFuhnance } from "../../components/global/starting-fuhnance/StartingFuhnance"
 
 export const Company = () => {
-    const bg = "url('./images/company.png')"
+    const bg = "url('./images/company.png')";
+    useEffect(()=>{
+      document.title = "Price"
+    },[])
   return (
     <>
         <Hero 

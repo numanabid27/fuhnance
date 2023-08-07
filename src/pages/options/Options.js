@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Hero } from "../../components/global/hero/Hero";
 import { OptionsPlay } from '../../components/options/options-play/OptionsPlay';
 import { SmartInvestors } from '../../components/options/smart-investores/SmartInvestors';
@@ -97,6 +97,10 @@ export const Options = () => {
             Margin: '5.0 %',
         }
     ]
+
+    useEffect(()=>{
+        document.title = "Options"
+    })
     return (
         <>
             <Hero
