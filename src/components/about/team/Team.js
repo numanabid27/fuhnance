@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heading } from "../../../components/global/heading/Heading";
+import { Link } from 'react-router-dom';
 
 export const Team = () => {
     const team = [
@@ -30,9 +31,24 @@ export const Team = () => {
                         team.map(({img, name, designation}, i)=>{
                             return(
                                 <div key={i.toString()} className='text-center'>
-                                    <img src={img} alt='' />
+                                    <div className='relative'>
+                                        <img src={img} alt='' />
+                                        <div className='absolute team_social'>
+                                        <Link to="#">
+                                            <img src='./images/fbc.png' alt='' className='mb-1 w-full' />
+                                        </Link>
+                                        <Link to="#">
+                                            <img src='./images/tweet.png' alt='' className='mb-1 w-full' />
+                                        </Link>
+                                        <Link to="#">
+                                            <img src='./images/tweet.png' alt='' className='mb-1 w-full' />
+                                        </Link>
+                                    </div>
+                                    </div>
                                     <h6 className='text-white text-[20px] font-bold mt-3'>{name}</h6>
                                     <p className='text-[#9C9C9C]'>{designation}</p>
+
+                                    
                                 </div>
                             )
                         })
