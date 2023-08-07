@@ -846,6 +846,15 @@ ul.stock_list {
     -webkit-transform: unset;
             transform: unset;
   }
+
+  .aa{
+    height: 100% !important;
+    transition: 0.4s;
+  }
+
+  .bb{
+    height: 0px;
+  }
 }
 
 .relative {

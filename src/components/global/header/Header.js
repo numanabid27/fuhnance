@@ -157,7 +157,7 @@ export default function Header() {
                         )}
                     </IconButton>
                 </div>
-                <MobileNav open={openNav}>
+                <MobileNav open={openNav} className={`${openNav ? "aa" : "bb"}`}>
                     <div className="container mx-auto">
                         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 md:px-0 px-4">
                             {
@@ -204,14 +204,14 @@ const NavList = ({ id, title, link, sublinks, sublink, subtitle, isOpen, handleC
             {
                 width && width < 700 ?
                     <>
-                        <li className="py-3 px-1 font-normal item-list" onClick={handleClick}>
-                            <Link to={link} className={`${chnageSyleNav} font-normal flex items-center `} >
+                        <li className="py-3 px-1 font-normal" onClick={handleClick}>
+                            <Link className={`${chnageSyleNav} font-normal flex items-center `} >
                                 {title}
                                 <span className="ml-1">
                                     <IoIosArrowDown />
                                 </span>
                             </Link>
-                            <ul className={`${isOpen ? "block" : "hidden"}`}>
+                            <ul className={`${isOpen ? "block" : " hidden"} item-menu`}>
                                 {
                                     sublinks?.map(({ sublink, subtitle }, i) => {
                                         return (
@@ -230,7 +230,7 @@ const NavList = ({ id, title, link, sublinks, sublink, subtitle, isOpen, handleC
                     :
                     <>
                         <li className="py-3 px-1 font-normal item-list">
-                            <Link to={link} className={`${chnageSyleNav} font-normal flex items-center `} >
+                            <Link className={`${chnageSyleNav} font-normal flex items-center `} >
                                 {title}
                                 {
                                     sublinks &&
