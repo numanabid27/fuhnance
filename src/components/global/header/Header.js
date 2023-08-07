@@ -67,7 +67,7 @@ export default function Header() {
                     sublink: "/about"
                 },
                 {
-                    subtitle: "Feature Adnavtages",
+                    subtitle: "Features",
                     sublink: "/feature-advantages"
                 }
             ]
@@ -222,7 +222,7 @@ const NavList = ({ id, title, link, sublinks, sublink, subtitle, isOpen, handleC
                                     sublinks?.map(({ sublink, subtitle }, i) => {
                                         return (
                                             <li className="pb-1" key={i.toString()}>
-                                                <Link to={sublink} className={`${chnageSyleNav} flex items-center font-normal`}>
+                                                <Link to={sublink} className={`flex items-center font-normal`}>
                                                     {subtitle}
                                                 </Link>
                                             </li>
@@ -252,7 +252,7 @@ const NavList = ({ id, title, link, sublinks, sublink, subtitle, isOpen, handleC
                                         sublinks?.map(({ sublink, subtitle }, i) => {
                                             return (
                                                 <li className="pb-1" key={i.toString()}>
-                                                    <Link to={sublink} className={`${chnageSyleNav} flex items-center font-normal`}>
+                                                    <Link to={sublink} className={`flex items-center font-normal`}>
                                                         {subtitle}
                                                     </Link>
                                                 </li>
