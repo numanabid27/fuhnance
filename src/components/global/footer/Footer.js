@@ -33,7 +33,7 @@ export const Footer = () => {
                                 <h6 className='text-white text-[20px] font-semibold pb-4'>Follow Us On</h6>
                                 <div className='flex'>
                                     <a href='#'>
-                                        <img src='./images/ffb.png' alt='' className='w-5' />
+                                        <img src='./images/fb.png' alt='' className='w-5' />
                                     </a>
                                     
                                     <a href='#' className='ml-4'>
@@ -46,7 +46,7 @@ export const Footer = () => {
                                         <img src='./images/pintest.png' alt='' className='w-5' />
                                     </a>
                                     <a href='#' className='ml-4'>
-                                        <img src='./images/ftwitter.png' alt='' className='w-5' />
+                                        <img src='./images/twitter.png' alt='' className='w-5' />
                                     </a>
                                 </div>
                             </div>
