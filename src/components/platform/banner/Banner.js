@@ -3,7 +3,7 @@ import React from 'react'
 export const Banner = () => {
   return (
     <>
-      <section className='bg-no-repeat xl:pb-[201px] md:pb-[133px] pb-[40px]' style={{ backgroundImage: "url('./images/platform-banner.png')", backgroundSize:"100% 100%" }}>
+      <section className='bg-no-repeat xl:pb-[201px] md:pb-[133px] pb-[40px] banner' style={{ backgroundImage: "url('./images/platform-banner.png')"}}>
         <div className='container m-auto side-padding'>
           <div className='text-center pt-14 m-auto max-w-4xl'>
             <img src="./images/trade.png" alt="" className='lg:my-14 my-0 lg:w-full w-[80%] m-auto'/>

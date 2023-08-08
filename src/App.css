@@ -170,6 +170,9 @@ body {
     .hamburger span{
         top: 0;
     }
+    .banner{
+        background-size: 100% 100%;
+    }
     @media screen and (max-width:1258px){
         .slide_Bg{
             height: 62vh;
@@ -193,6 +196,11 @@ body {
     @media screen and (max-width:800px){
         .banner_img {
             transform: translateY(5px);
+        }
+        .header_list {
+            padding: 10px 6px !important;
+           font-size: 15px;
+            width: 109px;
         }
     }
     @media screen and (max-width:767px){
@@ -258,7 +266,14 @@ body {
             right: -9px;
         }
         
-        
+        .banner{
+            background-size: cover;
+        }
     }
 
+}
+@media (max-width: 1023px) and (min-width:800px){
+    .container {
+        max-width: 960px !important;
+    }
 }

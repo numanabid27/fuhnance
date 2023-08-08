@@ -3,7 +3,7 @@ import React from 'react'
 export const Banner = () => {
   return (
     <>
-      <section className='bg-no-repeat lg:pb-[107px] p-[1px]' style={{ backgroundImage: "url('./images/hero.png')", backgroundSize:"100% 100%" }}>
+      <section className='bg-no-repeat lg:pb-[107px] p-[1px] banner' style={{ backgroundImage: "url('./images/hero.png')"}}>
         <div className='container m-auto side-padding'>
           <div className='text-center md:pt-16 pt-8 m-auto max-w-3xl'>
             <h1 className='text-white xl:text-xl lg:text-2xl text-xs md:text-lg font-semibold leading-[0.99]'><span className='text-blue'>Invest</span> and trade your way</h1>
