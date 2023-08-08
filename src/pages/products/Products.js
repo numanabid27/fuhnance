@@ -18,29 +18,29 @@ export const Products = () => {
       para: "The account value shield acts as a stop loss on your entire account value. If triggered, it will close all your open positions."
     },
     {
-      img: "./images/lock.png",
+      img: "./images/action.png",
       title: "Stop Orders",
-      para: "The account value shield acts as a stop loss on your entire account value. If triggered, it will close all your open positions."
+      para: "Protect your positions from adverse market moves with trailing stops and stop-limit orders."
     },
     {
-      img: "./images/lock.png",
+      img: "./images/calc.png",
       title: "Cancel all Orders",
-      para: "The account value shield acts as a stop loss on your entire account value. If triggered, it will close all your open positions."
+      para: "Cancel all orders, or just those within an asset class, with a few clicks."
     },
     {
-      img: "./images/lock.png",
+      img: "./images/speedMeter.png",
       title: "Margin Breakdown",
-      para: "The account value shield acts as a stop loss on your entire account value. If triggered, it will close all your open positions."
+      para: "Easily monitor the margin utilisation for each instrument."
     },
     {
-      img: "./images/lock.png",
+      img: "./images/mob.png",
       title: "Margin Alerts",
-      para: "The account value shield acts as a stop loss on your entire account value. If triggered, it will close all your open positions."
+      para: "Set custom margin alerts to receive pop-up and push-notifications."
     },
     {
-      img: "./images/lock.png",
+      img: "./images/fast.png",
       title: "Quick Close Positions",
-      para: "The account value shield acts as a stop loss on your entire account value. If triggered, it will close all your open positions."
+      para: "Close all FX and CFD positions, or just those within an asset class, in two clicks.*"
     },
   ]
 

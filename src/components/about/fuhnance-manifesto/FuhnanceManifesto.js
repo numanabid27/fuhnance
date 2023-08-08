@@ -13,12 +13,12 @@ export const FuhnanceManifesto = () => {
                     <div className='bg-dark-color text-center md:py-10 py-8 md:px-5 px-4'>
                         <img src='./images/eye.png' alt='' className='md:w-12 w-10 m-auto'/>
                         <h6 className='text-center text-white text-[22px] py-4'>Our Vision</h6>
-                        <p className='text-grey'>To be the leading global advocate of freedom by accelerating a transition to a more open and fair world.</p>
+                        <p className='text-grey m-auto max-w-[443px]'>To be the leading global advocate of freedom by accelerating a transition to a more open and fair world.</p>
                     </div>
                     <div className='bg-dark-color text-center md:py-10 py-8 md:px-5 px-4'>
                         <img src='./images/eye.png' alt='' className='md:w-12 w-10 m-auto'/>
-                        <h6 className='text-center text-white text-[22px] py-4'>Our Vision</h6>
-                        <p className='text-grey'>To be the leading global advocate of freedom by accelerating a transition to a more open and fair world.</p>
+                        <h6 className='text-center text-white text-[22px] py-4'>Our Mission</h6>
+                        <p className='text-grey m-auto max-w-[443px]'> Inspired by the Market Trading Strategies ,that enables people to transact and interact and deals in Forex , stocks and Options Trading freely and effortlessly around the world.</p>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ export const ChooseFuhnance = () => {
     const data = [
         {
             img: "./images/tick.png",
-            title: "Ensure data investent",
+            title: "Ensure data investment",
             text: "Commission-free, online trading and no hidden fees. We’ll help you plan and invest for life after work."
         },
         {
@@ -24,15 +24,16 @@ export const ChooseFuhnance = () => {
             text: "Get a diversified portfolio that’s monitored and managed for a low annual advisory fee of 0.30% and $500 minimum."
         },
         {
-            img: "./images/headphone.png",
+            img: "./images/stock-rate.png",
             title: "Market insights",
             text: "Get timely market analysis, plus free Morgan Stanley equity research."
         },
         {
-            img: "./images/stock-rate.png",
+            img: "./images/headphone.png",
             title: "24/7 Support",
-            text: "Diversified investment choices, all in one place. Award-winning, professional service when you need it most."
+            text: "Diversified investment choices, all in one place. Award-winning, professional service when you need it most"
         }
+        
     ]
     return (
         <>

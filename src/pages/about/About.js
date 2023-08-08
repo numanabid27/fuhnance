@@ -44,24 +44,16 @@ export const About = () => {
             para: "Stay on top of the market with our innovative technology, extensive product access, personalized trading, and Forex trading."
         },
         {
-            img: "./images/coins.png",
+            img: "./images/tv.png",
             title: "Stocks Trading",
             para: "Stay on top of the market with our innovative technology, extensive product access, personalized trading, and Stocks trading."
         },
         {
-            img: "./images/coins.png",
+            img: "./images/tv-graph.png",
             title: "Options Trading",
             para: "Stay on top of the market with our innovative technology, extensive product access, personalized trading, and Option trading."
         }
     ]
-
-    const datas = async() =>{
-      const res = await fetch(`https://api.coindesk.com/v1/bpi/historical/close.json`);
-      const result = await res.json();
-      console.log(".....",result.time
-      )
-    }
-    datas()
 
   return (
     <>

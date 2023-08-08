@@ -126,7 +126,7 @@ body {
         max-width: 1219px;
     }
     .slide-col1{
-        width: 38vw;
+        width: 47%;
     }
     .slide-col2{
         width: 41vw;
@@ -147,9 +147,9 @@ body {
     .slide_arrows{
         position: relative;
         z-index: 9;
-        bottom: 11vw;
+        bottom: 12vw;
         right: 0;
-        left: -12vw;
+        left: -8vw;
         margin: 0 auto;
         text-align: center;
     }
@@ -167,7 +167,9 @@ body {
     .team_social:hover{
         background-color: #000;
     }
-
+    .hamburger span{
+        top: 0;
+    }
     @media screen and (max-width:1258px){
         .slide_Bg{
             height: 62vh;

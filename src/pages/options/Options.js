@@ -51,12 +51,12 @@ export const Options = () => {
             para: "Options trading is a useful tool for hedging against market fluctuations. By buying put options, for example, you can protect your portfolio against a downturn in the market."
         },
         {
-            img: "./images/coins.png",
+            img: "./images/tv.png",
             title: "Versatility",
             para: "Options trading used in a range of trading strategies, including directional trading, spread trading, and volatility trading."
         },
         {
-            img: "./images/coins.png",
+            img: "./images/tv-graph.png",
             title: "Leverage",
             para: "Options trading also provides traders with leverage, which means you can control a large amount of assets with a relatively small investment."
         }
@@ -65,36 +65,27 @@ export const Options = () => {
     const tableData = [
         {
             id: 1,
-            Instrument: 'Apple Inc',
-            Sell: 0.9121,
-            Buy: 0.9121,
-            percentChange: 0.25,
-            Spread: 1.7,
-            TodayHigh: 1.9121,
-            TodayLow: 0.9121,
-            Margin: '5.0 %',
+            Instrument: '20 Puts/Calls',
+            Sell: "Single Leg",
+            Buy: "0%",
+            percentChange: "$ 0",
+            Spread: "$ 0",
         },
         {
             id: 2,
-            Instrument: 'Tesla Motors Inc',
-            Sell: 0.9121,
-            Buy: 0.9121,
-            percentChange: -0.25,
-            Spread: 1.5,
-            TodayHigh: 1.9121,
-            TodayLow: 0.9121,
-            Margin: '5.0 %',
+            Instrument: '20 Verticals',
+            Sell: "Double Leg",
+            Buy: "0.12 %",
+            percentChange: "$0.02-$0.04",
+            Spread: "0.9121 $",
         },
         {
             id: 3,
-            Instrument: 'Gold',
-            Sell: 0.9121,
-            Buy: 0.9121,
-            percentChange: 0.25,
-            Spread: 1.7,
-            TodayHigh: 1.9121,
-            TodayLow: 0.9121,
-            Margin: '5.0 %',
+            Instrument: "20 Iron Condors",
+            Sell: "Four Leg",
+            Buy: "0.45 %",
+            percentChange:"$0.009946",
+            Spread: "$0.02",
         }
     ]
 
@@ -112,7 +103,12 @@ export const Options = () => {
             <OptionsPlay />
             <SmartInvestors />
             <FantasticReturn />
-            <GlobalMarkets tableData={tableData} heading={<></>} />
+            <GlobalMarkets 
+                tableData={tableData} 
+                headings={<>No Contract Fees , <span className='text-blue'>No Commissions.</span></>} 
+                desc="0 commissions, 0 contract fees, 0 assignment or exercise fees and no minimum deposit. No matter what options strategy or lot size you like, you'll never pay fees per leg."
+                styling={true}
+            />
             <TaradeWay
                 heading={<>Option <span className='text-blue'>Trading Strategies</span></>}
                 para="Option Trading strategies to choose from on Webull, including single option, covered stock, straddle, butterfly, iron condor, etc"

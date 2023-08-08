@@ -3,7 +3,7 @@ import React from 'react'
 export const Banner = () => {
   return (
     <>
-      <section className='bg-cover bg-no-repeat xl:pb-[200px] md:pb-[133px] pb-[40px]' style={{ backgroundImage: "url('./images/platform-banner.png')" }}>
+      <section className='bg-no-repeat xl:pb-[201px] md:pb-[133px] pb-[40px]' style={{ backgroundImage: "url('./images/platform-banner.png')", backgroundSize:"100% 100%" }}>
         <div className='container m-auto side-padding'>
           <div className='text-center pt-14 m-auto max-w-4xl'>
             <img src="./images/trade.png" alt="" className='lg:my-14 my-0 lg:w-full w-[80%] m-auto'/>
@@ -23,7 +23,7 @@ export const Banner = () => {
                 </div>
             </div>
 
-            <a href='#' className='text-white bg-blue inline-flex items-center md:text-sm text-1x1 px-7 py-2 rounded md:mt-[112px] mt-[50px]'>Start Trading <img src='./images/right-arrow.png' alt='' className='w-[10px] ml-2' /></a>
+            <a href='#' className='text-white bg-blue inline-flex items-center md:text-sm text-1x1 px-7 md:py-3 py-2 rounded md:mt-[112px] mt-[50px]'>Start Trading <img src='./images/right-arrow.png' alt='' className='w-[15px] ml-2' /></a>
           </div>
         </div>
       </section>

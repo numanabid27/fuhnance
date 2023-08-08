@@ -7,7 +7,7 @@ export const MarketResearch = () => {
         <section className='bg-dark md:py-20 py-14'>
             <div className='container m-auto side-padding'>
                 <Heading heading="Sharpen your strategy with curated market research" /> 
-                <p className='text-white md:text-sm text-1x1 text-center pt-2 md:pt-0'>Get financially prepared for whatever life throws your way with help from Fuhance.</p>
+                <p className='text-white md:text-sm text-1x1 text-center pt-2 md:pt-0 capitalize'>Get financially prepared for whatever life throws your way with help from Fuhance.</p>
                 <div className='grid md:grid-cols-2 grid-cols-1 items-center lg:gap-20 gap-8 container m-auto pt-12'>
                     <div>
                         <img src="./images/product-stock.png" alt="" />

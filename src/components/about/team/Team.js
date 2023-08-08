@@ -40,9 +40,7 @@ export const Team = () => {
                                         <Link to="#">
                                             <img src='./images/tweet.png' alt='' className='mb-1 w-full' />
                                         </Link>
-                                        <Link to="#">
-                                            <img src='./images/tweet.png' alt='' className='mb-1 w-full' />
-                                        </Link>
+                                       
                                     </div>
                                     </div>
                                     <h6 className='text-white text-[20px] font-bold mt-3'>{name}</h6>

@@ -9,7 +9,7 @@ import { StartingFuhnance } from "../../components/global/starting-fuhnance/Star
 import { useEffect } from 'react';
 
 export const FuhnanceAdvantages = () => {
-    const bg = "url('./images/about.png')";
+    const bg = "url('./images/advantages-banner.png')";
     const tradeWay = [
         {
             img: "./images/move.png",
@@ -60,6 +60,7 @@ export const FuhnanceAdvantages = () => {
                 heading="Our Advantages"
                 tradeWay={tradeWay}
                 styling={true}
+                spacing={false}
             />
             <Explore />
             <TradingPlatform />

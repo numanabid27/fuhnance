@@ -39,27 +39,27 @@ export const Forex = () => {
       para: "Trade on the strength of one currency versus another. The FX market is the largest and most liquid market in the world"
     },
     {
-      img: "./images/forex-icn.png",
+      img: "./images/indices.png",
       title: "Indices",
       para: "Trade on the strength of one currency versus another. The FX market is the largest and most liquid market in the world"
     },
     {
-      img: "./images/forex-icn.png",
+      img: "./images/crypto.png",
       title: "Cryptocurrencies",
       para: "Speculate on the price of some of the most popular cryptocurrencies"
     },
     {
-      img: "./images/forex-icn.png",
+      img: "./images/fFlower.png",
       title: "Commodities",
       para: "Speculate on the price of all the most popular commodities, including gold, silver, oil and natural gas"
     },
     {
-      img: "./images/forex-icn.png",
+      img: "./images/fmadel.png",
       title: "Share & ETFs",
       para: "Take a position on the performance of the world's largest companies, from Apple to Amazon and Rio Tinto to RBS"
     },
     {
-      img: "./images/forex-icn.png",
+      img: "./images/treasuries.png",
       title: "Treasuries",
       para: "Take a view on government bonds, gilts and treasury notes to get exposure to a specific region's economy"
     }

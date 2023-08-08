@@ -13,7 +13,7 @@ export const Footer = () => {
                         </div>
                         <div className='md:w-1/4 w-full'>
                             <h6 className='text-white text-[20px] font-semibold pb-4'>Platform</h6>
-                            <Link to='/products' className='text-white block pb-3 font-light'>Stcoks</Link>
+                            <Link to='/products' className='text-white block pb-3 font-light'>Stocks</Link>
                             <Link to='/forex' className='text-white block pb-3 font-light'>Forex</Link>
                             <Link to='/options' className='text-white block pb-3 font-light'>Options</Link>
                         </div>

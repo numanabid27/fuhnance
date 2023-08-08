@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heading } from '../heading/Heading'
 
-export const TaradeWay = ({tradeWay, heading,para,styling}) => {
+export const TaradeWay = ({tradeWay, heading,para,styling, spacing}) => {
    
   return (
     <>
@@ -17,7 +17,7 @@ export const TaradeWay = ({tradeWay, heading,para,styling}) => {
                                 <div className={`${styling ? "text-left" : "text-center"}`} key={i.toString()}>
                                     <img src={img} alt='' className={`${styling ? "m-0" : "m-auto"} w-[15%]`} />
                                     <h6 className='text-white text-[20px] py-3'>{title}</h6>
-                                    <p className='text-grey text-[14px]'>{para}</p>
+                                    <p className={`${spacing && "max-w-[313px] m-auto"} text-grey text-[14px]`}>{para}</p>
                                 </div>
                             )
                         })

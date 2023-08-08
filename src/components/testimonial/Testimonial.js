@@ -14,7 +14,7 @@ export const Testimonial = () => {
         <>
             <section className='bg-dark md:py-20 py-16 testimonial_Sec'>
                 <div>
-                    <Heading heading="Testimonial" />
+                    <Heading heading="Testimonials" />
                     <div className='slide_Bg'></div>
                     <div className='pt-8 px-5 '>
                         <div className='container m-auto'>
@@ -37,10 +37,10 @@ export const Testimonial = () => {
                                                         <div className='quote_img'>
                                                             <img src="./images/quote.png" alt="" className='w-16' />
                                                         </div>
-                                                        <div className='p-5 w-full bg-dark ml-4 mobile_Slide'>
+                                                        <div className='md:px-5 px-9 py-5 w-full bg-dark md:ml-4 ml-0 mobile_Slide'>
                                                             <h4 className='text-white font-extrabold'>{clientName}</h4>
-                                                            <p className='text-[#C4C4C4] font-extralight text-[12px] pt-1'>{designation}</p>
-                                                            <h6 className='text-[#C4C4C4] font-extralight text-[14px] pt-5 pb-5'>{desc}</h6>
+                                                            <p className='text-[#CACACA] font-normal text-[12px] pt-1'>{designation}</p>
+                                                            <h6 className='text-[#C4C4C4] font-normal text-[14px] pt-5 pb-5'>{desc}</h6>
                                                             <img src="./images/star.png" alt="" className='w-36 pb-8' />
                                                         </div>
                                                     </div>
@@ -56,7 +56,7 @@ export const Testimonial = () => {
 
                             <div className='slide_arrows'>
                                 <button
-                                    className="prev-btn z-10 mr-2"
+                                    className="prev-btn z-10 mr-3"
                                     onClick={() => swiperRef.current?.slidePrev()}
                                 >
                                     <img src="./images/leftArrow.png" alt=""/>

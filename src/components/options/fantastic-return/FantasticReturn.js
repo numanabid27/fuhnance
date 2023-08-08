@@ -11,28 +11,28 @@ export const FantasticReturn = () => {
         },
         {
             img : "./images/stock-frame.png",
-            title : "Heston Model",
-            desc : "The Heston option pricing model, or Heston Model, is supposed to be an improvement to the Black-Scholes model which had taken some assumptions which did not reflect the real world."
+            title : "Black Scholes Model",
+            desc : "Trade on the strength of one currency versus another. The FX market is the largest and most liquid market in the world"
         },
         {
             img : "./images/stock-frame.png",
-            title : "Heston Model",
-            desc : "The Heston option pricing model, or Heston Model, is supposed to be an improvement to the Black-Scholes model which had taken some assumptions which did not reflect the real world."
+            title : "Exotic Options",
+            desc : "Exotic Options Also known as Vanilla and untraditional trading in Python, and the pros & cons of Exotic Options trading."
         },
         {
             img : "./images/stock-frame.png",
-            title : "Heston Model",
-            desc : "The Heston option pricing model, or Heston Model, is supposed to be an improvement to the Black-Scholes model which had taken some assumptions which did not reflect the real world."
+            title : "Steady Options",
+            desc : "Steady Options is an options trading advisory service that uses diversified options trading strategies for steady and consistent gains under all market conditions."
         },
         {
             img : "./images/stock-frame.png",
-            title : "Heston Model",
-            desc : "The Heston option pricing model, or Heston Model, is supposed to be an improvement to the Black-Scholes model which had taken some assumptions which did not reflect the real world."
+            title : "Swap Option",
+            desc : "Swap Option or the term swaption provides you with the option to swap financial instruments and cash flows but usually the interest rate between two parties."
         },
         {
             img : "./images/stock-frame.png",
-            title : "Heston Model",
-            desc : "The Heston option pricing model, or Heston Model, is supposed to be an improvement to the Black-Scholes model which had taken some assumptions which did not reflect the real world."
+            title : "Leaps Options",
+            desc : "LEAPS options are contracts with an expiry date longer than a year. The main benefit of a LEAPS option is that a long-term investor can dabble in options without worrying about the short-term volatility of the market."
         }
     ]
   return (
@@ -46,14 +46,14 @@ export const FantasticReturn = () => {
                     {
                         data.map(({img, title, desc}, i)=>{
                             return(
-                                <div key={i.toString()} className='flex gap-6 '>
-                                    <div>
+                                <div key={i.toString()} className='md:flex text-center md:text-left gap-6 '>
+                                    <div className='md:w-[9%] w-[20%] m-auto md:m-0'>
                                         <img src={img} alt="" className='lg:w-[133px] w-[193px]' />
                                     </div>
-                                    <div>
+                                    <div className='md:w-[87%] w-[100%] mt-3 md:mt-0'>
                                         <h6 className='text-white font-semibold'>{title}</h6>
                                         <p className='text-grey py-3'>{desc}</p>
-                                        <a href='#' className='text-blue flex items-center'>Learn more <span className='ml-2'><IoIosArrowForward/></span></a>
+                                        <a href='#' className='text-blue flex items-center justify-center md:justify-start'>Learn more <span className='ml-2'><IoIosArrowForward/></span></a>
                                     </div>
                                 </div>
                             )

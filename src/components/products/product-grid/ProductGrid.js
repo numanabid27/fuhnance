@@ -29,7 +29,7 @@ export const ProductGrid = () => {
                         return(
                             <div className='text-center lg:pb-0 md:pb-3 pb-6' key={i.toString()}>
                                 <h6 className='text-white text-[20px] font-semibold'>{heading}</h6>
-                                <p className='text-white text=[14px] pt-4'>{para}</p>
+                                <p className='text-white text-[14px] pt-4 m-auto max-w-[266px]'>{para}</p>
                             </div>
                         )
                     })

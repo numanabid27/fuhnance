@@ -9,12 +9,13 @@ export const TradeSmarter = () => {
             para : "Create your trading account to explore our intuitive trading platform and enhance your skills"
         },
         {   
-            img: "./images/tickk.png",
+            img: "./images/frame.png",
+            
             title : "Expand your knowledge",
             para : "Learn about trading CFDs with Fuhnance using our comprehensive educational materials"
         },
         {   
-            img: "./images/tickk.png",
+            img: "./images/trades.png",
             title : "Manage your risks",
             para : "Use our advanced risk management tools to limit your losses and lock in profits"
         },
@@ -31,8 +32,8 @@ export const TradeSmarter = () => {
                             return(
                                 <div className='text-center md:mt-16 mt-11' key={i.toString()}>
                                     <img src={img} alt='' className='w-[10%] m-auto' />
-                                    <h6 className='text-white text-[20px] py-4'>{title}</h6>
-                                    <p className=' text-[14px] text-[#ADADAD]'>{para}</p>
+                                    <h6 className='text-white text-[20px] py-4 '>{title}</h6>
+                                    <p className=' text-[14px] text-[#ADADAD] m-auto max-w-[312px]'>{para}</p>
                                 </div>
                             )
                         })
