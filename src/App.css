@@ -227,6 +227,12 @@ body {
            font-size: 15px;
             width: 109px;
         }
+        .slide_row{  
+            margin-top: 61px;
+        }
+        .slide_arrows {
+            bottom: 7.5vw;
+        }
     }
     @media screen and (max-width:767px){
         .footer_row,
@@ -257,14 +263,14 @@ body {
             background-color: #0D0D0D !important;
         }
         .client_img {
-            width: 135px;
-            height: 136px;
+            width: 116px;
+            height: 115px;
             border-radius: 50%;
-            margin: -31px auto 0;
+            margin: -45px auto 19px;
         }
         .slide_arrows {
             left: 0%;
-            bottom: -5vw;
+            bottom: 0vw;
         }
         ul.item-menu {
             visibility: visible;

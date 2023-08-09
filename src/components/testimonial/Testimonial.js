@@ -52,9 +52,7 @@ export const Testimonial = () => {
                                         )
                                     })
                                 }
-                            </Swiper>
-
-                            <div className='slide_arrows'>
+                                 <div className='slide_arrows'>
                                 <button
                                     className="prev-btn z-10 mr-4"
                                     onClick={() => swiperRef.current?.slidePrev()}
@@ -68,6 +66,9 @@ export const Testimonial = () => {
                                     <img src="./images/rightArrow.png" alt=""/>
                                 </button>
                             </div>
+                            </Swiper>
+
+                           
                         </div>
                     </div>
                 </div>
