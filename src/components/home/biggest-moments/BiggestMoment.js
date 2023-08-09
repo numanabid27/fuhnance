@@ -10,8 +10,8 @@ export const BiggestMoment = () => {
                 <div className='grid md:grid-cols-2 grid-cols-1 gap-20 mt-10 container m-auto items-center'>
                     <div>
                         <h6 className='text-white md:text-xs text-md'>Take your trading to the next level</h6>
-                        <p className='text-white py-3'>Take your trading to the next level with our latest innovative tools and Fuhance’s most advanced desktop platform, Street Smart Edge</p>
-                        <p className='text-white py-3'>Our Client Relationship Summaries offer a brief summary of our services, fees, and obligations when we work with you in a broker-dealer or an investment</p>
+                        <p className='text-white py-3 ml-0 max-w-[555px]'>Take your trading to the next level with our latest innovative tools and Fuhance’s most advanced desktop platform, Street Smart Edge.</p>
+                        <p className='text-white py-3 ml-0 max-w-[555px]'>Our Client Relationship Summaries offer a brief summary of our services, fees, and obligations when we work with you in a broker-dealer or an investment.</p>
                         <a href='#' className='bg-blue text-white py-3 px-5 rounded mt-4 inline-block'>Get Started</a>
                     </div>
                     <div>

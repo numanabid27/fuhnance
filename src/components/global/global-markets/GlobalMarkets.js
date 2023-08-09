@@ -2,14 +2,14 @@ import React from 'react'
 import { Heading } from '../heading/Heading';
 
 
-export const GlobalMarkets = ({ tableData, headings, desc, styling }) => {
+export const GlobalMarkets = ({ tableData, headings, desc, styling, para}) => {
 
     return (
         <>
             <section className='md:py-20 py-16 bg-dark'>
                 <div className='container m-auto side-padding'>
                     <Heading heading={headings} />
-                    <p className='text-white md:text-sm text-1x1 pt-2 md:pt-1 text-center m-auto max-w-[874px]'>{desc}</p>
+                    <p className={`${para && "m-auto max-w-[874px]" } text-white md:text-sm text-1x1 pt-2 md:pt-1 text-center`}>{desc}</p>
                     <div className='global_table'>
                         <table striped bordered hover responsive className='mt-8 m-auto'>
                             <thead className={`${styling && "bg-[#414660]"}`}>

@@ -44,7 +44,7 @@ export const FuhnancePower = () => {
                                 </div>
                             </div>
                         </div>
-                        <a href="#" className="bg-blue text-white py-3 px-5 rounded mt-4 inline-block">Get Started</a>
+                        <a href="#" className="bg-blue text-white py-3 px-5 rounded mt-6 inline-block">Get Started</a>
                     </div>
                     <div>
                         <img src='./images/power.png' alt='' />

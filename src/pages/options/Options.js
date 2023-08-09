@@ -108,6 +108,7 @@ export const Options = () => {
                 headings={<>No Contract Fees , <span className='text-blue'>No Commissions.</span></>} 
                 desc="0 commissions, 0 contract fees, 0 assignment or exercise fees and no minimum deposit. No matter what options strategy or lot size you like, you'll never pay fees per leg."
                 styling={true}
+                para={true}
             />
             <TaradeWay
                 heading={<>Option <span className='text-blue'>Trading Strategies</span></>}

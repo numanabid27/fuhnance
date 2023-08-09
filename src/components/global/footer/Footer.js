@@ -7,17 +7,19 @@ export const Footer = () => {
             <footer className='bg-dark pt-10'>
                 <div className='container m-auto side-padding'>
                     <div className='flex lg:gap-16 gap-6 m-auto container footer_row pb-6'>
-                        <div className='md:w-[33%] w-full'>
-                            <img src='./images/getting-logo.png' alt='' className='w-[68%]' />
-                            <p className='text-white pt-6 font-light'>Lorem ipsum dolor sit amet consectetur. Integer faucibus purus morbi dui ridiculus eget. Massa enim lacus nunc nisl ullamcorper purus ut tristique. Viverra neque justo proin diam aliquet risus augue libero.</p>
+                        <div className='md:w-[36%] w-full'>
+                            <div className='mr-auto max-w-[332px]'>
+                                <img src='./images/getting-logo.png' alt='' className='w-[68%]' />
+                                <p className='text-white pt-6 font-light'>Lorem ipsum dolor sit amet consectetur. Integer faucibus purus morbi dui ridiculus eget. Massa enim lacus nunc nisl ullamcorper purus ut tristique. Viverra neque justo proin diam aliquet risus augue libero.</p>
+                            </div>
                         </div>
-                        <div className='md:w-1/4 w-full'>
+                        <div className='md:w-[17%] w-full'>
                             <h6 className='text-white text-[20px] font-semibold pb-4'>Platform</h6>
                             <Link to='/products' className='text-white block pb-3 font-light'>Stocks</Link>
                             <Link to='/forex' className='text-white block pb-3 font-light'>Forex</Link>
                             <Link to='/options' className='text-white block pb-3 font-light'>Options</Link>
                         </div>
-                        <div className='md:w-1/4 w-full'>
+                        <div className='md:w-[26%] w-full'>
                             <h6 className='text-white text-[20px] font-semibold pb-4'>Company</h6>
                             <Link to='/about' className='text-white block pb-3 font-light'>About</Link>
                             <Link to='/feature-advantages' className='text-white block pb-3 font-light'>Fuhnance Advantages</Link>

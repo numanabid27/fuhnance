@@ -32,7 +32,9 @@ export const Pricing = () => {
         <>
             <section className='md:py-20 py-16 bg-[#0D0D0D]'>
                 <div className='container m-auto side-padding'>
-                    <Heading heading="Make the wise decision for your business" />
+                    <div className='m-auto max-w-[604px]'>
+                        <Heading heading="Make the wise decision for your business" />
+                    </div>
                     <p className='text-[#A1A1AA] text-sm text-center pt-2 md:pt-0'>Choose  your plan</p>
 
                     <div className='grid md:grid-cols-3 grid-col-1 lg:gap-7 gap-5 mt-14 '>

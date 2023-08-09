@@ -13,9 +13,9 @@ export const Innovation = ({data, heading, para, styles}) => {
                     {
                         data.map(({img, title, para}, i)=>{
                             return(
-                                <div className={`${styles ? "bg-dark-color" : "bg-dark"} p-5 rounded`} key={i.toString()}>
-                                    <img src={img} alt="" className={`${styles && "w-[30px]"} lg:w-[10%] w-[50px]`}/>
-                                    <h6 className='text-white text-[20px] py-3'>{title}</h6>
+                                <div className={`${styles ? "bg-dark-color" : "bg-dark"} py-6 px-5 rounded`} key={i.toString()}>
+                                    <img src={img} alt="" className={`${styles && "w-[30px]"} lg:w-[14%] w-[50px]`}/>
+                                    <h6 className='text-white text-[20px] py-5'>{title}</h6>
                                     <p className='text-[#AAAAAA] text-[14px] '>{para}</p>
                                 </div>
                             )

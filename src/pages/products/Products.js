@@ -137,7 +137,12 @@ export const Products = () => {
       />
       <MarketResearch />
       <ProductGrid />
-      <GlobalMarkets tableData={tableData} headings="Global Markets" desc="Our spreads start from just 1 point on the UK 100 and Germany 30, and 0.8 pips on EUR/USD and EUR/GBP." />
+      <GlobalMarkets 
+        tableData={tableData} 
+        headings="Global Markets" 
+        desc="Our spreads start from just 1 point on the UK 100 and Germany 30, and 0.8 pips on EUR/USD and EUR/GBP." 
+        para={false}
+      />
       <Innovation data={data} heading={<>Innovative <span className='text-blue'>risk-free</span> features</>} para="Discover unique tools to manage your risk and control your positions." />
       <TradeSmarter />
       <StartingFuhnance />

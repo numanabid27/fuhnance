@@ -37,7 +37,7 @@ export const ChooseFuhnance = () => {
     ]
     return (
         <>
-            <section className='container m-auto side-padding pb-20 md:pt-0 pt-7'>
+            <section className='container mr-auto ml-auto mt-12 side-padding pb-20 md:pt-0 pt-7'>
                 <Heading heading={<>Why choose <span className='text-blue'>Fuhnance</span></>} />
                 <p className='text-white md:text-sm text-1x1 font-normal text-center md:pt-0 pt-2'>See why we're the trading partner of choice for hundreds of thousands of traders worldwide.</p>
 
@@ -45,7 +45,7 @@ export const ChooseFuhnance = () => {
                     {
                         data.map((item, i) => {
                             return (
-                                <div className='text-center bg-dark lg:px-8 px-5 py-4 rounded-md' key={i.toString()}>
+                                <div className='text-center bg-dark lg:px-8 px-5 py-6 rounded-md' key={i.toString()}>
                                     <img src={item.img} alt="" className='lg:w-[70px] md:w-[60px] w-[50px] m-auto' />
                                     <h6 className='text-white md:text-[20px] text-sm py-4'>{item.title}</h6>
                                     <p className='text-grey text-[14px]'>{item.text}</p>

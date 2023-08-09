@@ -31,7 +31,7 @@ export const FuhnanceProducts = () => {
                         {
                             data.map((item, i) => {
                                 return (
-                                    <div key={i.toString()} className='bg-dark text-center md:my-7 my-3 px-5 py-6 rounded'>
+                                    <div key={i.toString()} className='bg-dark text-center md:my-7 my-3 px-5 py-7 rounded'>
                                         <h6 className='text-blue font-semibold'>{item.heading}</h6>
                                         <p className='text-grey py-1 m-auto max-w-[317px]'>{item.title}</p>
                                         <a href='#' className='text-white pt-4 flex items-center justify-center'>{item.btn}
