@@ -1,8 +1,9 @@
 import React from 'react'
 import { Heading } from '../heading/Heading'
+import { useDimensions } from '../../../hooks/use-dimensions'
 
 export const TaradeWay = ({tradeWay, heading,para,styling, spacing}) => {
-   
+   const { width } = useDimensions();
   return (
     <>
         <section className='bg-dark-color md:py-20 py-16'>
@@ -15,7 +16,7 @@ export const TaradeWay = ({tradeWay, heading,para,styling, spacing}) => {
                         tradeWay.map(({img, title, para}, i)=>{
                             return(
                                 <div className={`${styling ? "text-left" : "text-center"}`} key={i.toString()}>
-                                    <img src={img} alt='' className={`${styling ? "m-0" : "m-auto"} w-[15%]`} />
+                                    <img src={img} alt='' className={`${styling ? "m-0" : "m-auto"} w-[15%] ${styling && width > 600 ? "h-[29%]" : ""}`} />
                                     <h6 className='text-white text-[20px] py-3 font-semibold'>{title}</h6>
                                     <p className={`${spacing && "max-w-[313px] m-auto"} text-grey text-[14px]`}>{para}</p>
                                 </div>

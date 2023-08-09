@@ -16,8 +16,8 @@ export const TradingPlatform = () => {
         },
         {
             title: "Derivatives",
-            desc: "Users wishin to mitigate the risks associated with the volatility of Digital Tokens may trade Derivative Products on the Derivatives Site. Perpetual contracts are already available and further Derivative Products are under development",
-            desc2: "Derivative Products can be traded using a Derivative Wallet credited with USDt0, a Digital Token which can be obtained by converting USDt, as explained in more details on our Knowledge Base",
+            desc: "Users wishing to mitigate the risks associated with the volatility of Digital Tokens may trade Derivative Products on the Derivatives Site. Perpetual contracts are already available and further Derivative Products are under development",
+            desc2: "Derivative Products can be traded using a Derivative Wallet credited with USDt0, a Digital Token which can be obtained by converting USD, as explained in more details on our Knowledge Base",
             img: "./images/Vectorr.png"
         },
     ]
@@ -31,14 +31,14 @@ export const TradingPlatform = () => {
                     {
                         data.map((items, i) => {
                             return (
-                                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-12 items-center trade mt-4 md:mt-0" key={i.toString()} >
+                                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-12 items-center trade mt-4 md:mt-0 mb-8" key={i.toString()} >
                                     <div>
                                         <h6 className='text-white text-[20px] mb-2 md:mb-0'>{items.title}</h6>
                                         <p className='text-white font-extralight'>{items.desc}</p>
                                         <p className='text-white font-extralight'>{items.desc2}</p>
                                     </div>
                                     <div>
-                                        <img src={items.img} alt='' className='w-[60%] m-auto' />
+                                        <img src={items.img} alt='' className='w-[49%] m-auto' />
                                     </div>
                                 </div>
                             )

@@ -56,7 +56,7 @@ export const Testimonial = () => {
 
                             <div className='slide_arrows'>
                                 <button
-                                    className="prev-btn z-10 mr-3"
+                                    className="prev-btn z-10 mr-4"
                                     onClick={() => swiperRef.current?.slidePrev()}
                                 >
                                     <img src="./images/leftArrow.png" alt=""/>

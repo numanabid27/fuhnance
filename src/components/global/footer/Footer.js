@@ -56,9 +56,9 @@ export const Footer = () => {
                     </div>
                     <div className='flex justify-between m-auto container py-5 footer_bottom'>
                         <div className='bottom-list'>
-                            <Link to='#' className='text-white text-[14px] mr-2'>Cookies Policy</Link>
-                            <Link to='#' className='text-white text-[14px] mr-2'>Privacy Policy</Link>
-                            <Link to='#' className='text-white text-[14px] mr-2'>Terms & Conditions</Link>
+                            <Link to='#' className='text-white text-[14px] mr-4'>Cookies Policy</Link>
+                            <Link to='#' className='text-white text-[14px] mr-4'>Privacy Policy</Link>
+                            <Link to='#' className='text-white text-[14px] mr-4'>Terms & Conditions</Link>
                         </div>
                         <div>
                             <p className='text-white text-[14px] text-center md:text-right md:pt-0 pt-3'>© 2023, Fuhnance. All Right Reserved</p>
