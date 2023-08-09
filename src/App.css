@@ -173,6 +173,7 @@ body {
     .banner{
         background-size: 100% 100%;
     }
+   
     @media (min-width: 1536px){
         .container {
             max-width: 1448px;
@@ -198,7 +199,12 @@ body {
             width: 50vw;
         }
     }
-    @media screen and (max-width:1100px){
+    @media screen and (max-width:1295px) and (min-width:1094px){
+        .container {
+            max-width: 1182px;
+        }
+    }
+    @media screen and (max-width:1280px){
         .global_table{
             overflow-x: scroll ;
         }
