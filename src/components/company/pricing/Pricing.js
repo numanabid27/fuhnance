@@ -43,15 +43,15 @@ export const Pricing = () => {
                                 return (
                                     <div className='py-8 lg:px-7 px-5 rounded bg-[#1C1C1F]' key={i.toString()}>
                                         <h6 className='text-white text-sm'>{title}</h6>
-                                        <h3 className='text-white lg:text-[60px] md:text-[50px] text-lg font-semibold'>{price} <span className='text-grey text-[16px] md:-ml-3 -ml-1'>/ month</span></h3>
+                                        <h3 className='text-white lg:text-[60px] md:text-[50px] text-lg font-semibold'>{price} <span className='text-grey text-[16px] md:-ml-3 -ml-1 font-extralight'>/ month</span></h3>
                                         <p className='text-grey pt-2 pb-5'>{para}</p>
                                         <ul className='price_list py-6'>
                                             {list.map((item, i) => {
                                                 return (
-                                                    <li key={i.toString()} className='text-white flex items-center mb-2 lg:text-1x1 text-[14px]'>
+                                                    <li key={i.toString()} className='text-white flex items-center mb-3 lg:text-1x1 text-[14px]'>
                                                         <img src='./images/checkcircle.png' alt='' className='w-[24px] mr-2' />
                                                         {item}
-                                                        <img src='./images/icon.png' alt='' className='w-[17px] h-[17px] ml-2' />
+                                                        <img src='./images/Icon.png' alt='' className='w-[17px] h-[17px] ml-2' />
                                                     </li>
                                                 )
                                             })}

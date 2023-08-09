@@ -14,7 +14,7 @@ export const Options = () => {
         {
             img: "./images/move.png",
             title: "Conder",
-            para: "Prpose of a condor strategy is to reduce risk, but that comes with reduced profit potential and the costs associated with trading several options legs."
+            para: "Purpose of a condor strategy is to reduce risk, but that comes with reduced profit potential and the costs associated with trading several options legs."
         },
         {
             img: "./images/move.png",

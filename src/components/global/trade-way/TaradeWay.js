@@ -16,7 +16,7 @@ export const TaradeWay = ({tradeWay, heading,para,styling, spacing}) => {
                             return(
                                 <div className={`${styling ? "text-left" : "text-center"}`} key={i.toString()}>
                                     <img src={img} alt='' className={`${styling ? "m-0" : "m-auto"} w-[15%]`} />
-                                    <h6 className='text-white text-[20px] py-3'>{title}</h6>
+                                    <h6 className='text-white text-[20px] py-3 font-semibold'>{title}</h6>
                                     <p className={`${spacing && "max-w-[313px] m-auto"} text-grey text-[14px]`}>{para}</p>
                                 </div>
                             )

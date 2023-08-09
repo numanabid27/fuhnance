@@ -27,11 +27,11 @@ export const FuhnanceProducts = () => {
                     <Heading heading="Fuhnance Products" />
                     <p className='text-white md:text-sm text-1x1 md:pt-0 pt-2 font-normal text-center capitalize'>Powerful platforms, tight spreads, fast execution, and dedicated support.</p>
 
-                    <div className='grid md:grid-cols-3 grid-cols-1 md:gap-5 gap-1 mt-10 md:mt-0'>
+                    <div className='grid md:grid-cols-3 grid-cols-1 md:gap-6 gap-1 mt-10 md:mt-0'>
                         {
                             data.map((item, i) => {
                                 return (
-                                    <div key={i.toString()} className='bg-dark text-center md:my-7 my-3 px-5 py-7 rounded'>
+                                    <div key={i.toString()} className='bg-dark text-center md:my-7 my-3 px-5 py-8 rounded-lg'>
                                         <h6 className='text-blue font-semibold'>{item.heading}</h6>
                                         <p className='text-grey py-1 m-auto max-w-[317px]'>{item.title}</p>
                                         <a href='#' className='text-white pt-4 flex items-center justify-center'>{item.btn}

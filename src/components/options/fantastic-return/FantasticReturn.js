@@ -6,12 +6,12 @@ export const FantasticReturn = () => {
     const data = [
         {
             img : "./images/stock-frame.png",
-            title : "Heston Model",
-            desc : "The Heston option pricing model, or Heston Model, is supposed to be an improvement to the Black-Scholes model which had taken some assumptions which did not reflect the real world."
+            title : "Heston Models",
+            desc : "The Heston options pricing model, or Heston Model, is supposed to be an improvement to the Black-Scholes model which had taken some assumptions which did not reflect the real world."
         },
         {
             img : "./images/stock-frame.png",
-            title : "Black Scholes Model",
+            title : "Black Scholes Models",
             desc : "Trade on the strength of one currency versus another. The FX market is the largest and most liquid market in the world"
         },
         {
@@ -26,8 +26,8 @@ export const FantasticReturn = () => {
         },
         {
             img : "./images/stock-frame.png",
-            title : "Swap Option",
-            desc : "Swap Option or the term swaption provides you with the option to swap financial instruments and cash flows but usually the interest rate between two parties."
+            title : "Swap Options",
+            desc : "Swap Options or the term swaption provides you with the option to swap financial instruments and cash flows but usually the interest rate between two parties."
         },
         {
             img : "./images/stock-frame.png",

@@ -40,7 +40,7 @@ body {
         background-image: url("../public/images/overlay.png");
         background-size: cover;
         background-repeat: no-repeat;
-        height: 189px;
+        height: 228px;
         width: 132px;
         top: 1px;
     }
@@ -192,7 +192,7 @@ body {
             width: 50vw;
         }
         .slide_arrows {
-            left: -4%;
+            left: -6%;
         }
         .slide-col2 {
             width: 50vw;
@@ -204,6 +204,9 @@ body {
         }
     }
     @media screen and (max-width:800px){
+        .sec::before{
+            display: none;
+        }
         .banner_img {
             transform: translateY(5px);
         }

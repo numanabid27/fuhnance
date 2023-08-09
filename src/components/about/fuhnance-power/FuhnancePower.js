@@ -9,7 +9,7 @@ export const FuhnancePower = () => {
                 <div className='grid md:grid-cols-2 gap-12 items-center grid-cols-1'>
                     <div>
                         <div className='mb-3'>
-                            <h2 className='text-white text-xs font-medium mb-5'>Fuhnance <span className='text-blue'>powers the Trade</span></h2>
+                            <h2 className='text-white text-xs font-medium mb-5'><span className='text-blue'>Fuhnance</span> powers the Trade</h2>
                             <div className='flex gap-4 '>
                                 <div>
                                     <img src='./images/pseudo.png' alt='' className='lg:w-11 w-14' />

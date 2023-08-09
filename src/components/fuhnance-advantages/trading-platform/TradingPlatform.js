@@ -38,7 +38,7 @@ export const TradingPlatform = () => {
                                         <p className='text-white font-extralight'>{items.desc2}</p>
                                     </div>
                                     <div>
-                                        <img src={items.img} alt='' className='w-2/3 m-auto' />
+                                        <img src={items.img} alt='' className='w-[60%] m-auto' />
                                     </div>
                                 </div>
                             )

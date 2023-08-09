@@ -4,7 +4,7 @@ export const Hero = ({ bg, heading, para, height }) => {
 
   return (
     <>
-      <section style={{ backgroundImage: bg }} className='bg-cover bg-no-repeat'>
+      <section style={{ backgroundImage: bg }} className='bg-cover bg-no-repeat bg-center'>
         <div className={`${height ? "lg:h-screen h-[80vh]" : "h-96"} text-center container m-auto side-padding`}>
           <div className={`${height ? "h-full" : "h-full"} flex justify-center items-center  flex-col`}>
             <h1 className='text-white xl:text-xl lg:text-2xl text-xs md:text-lg font-semibold leading-[1.2] max-w-[1051px]'>{heading}</h1>
