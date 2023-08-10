@@ -173,7 +173,9 @@ body {
     .banner{
         background-size: 100% 100%;
     }
-   
+    .banner {
+        background-size: 100% 100%;
+    }
     @media (min-width: 1536px){
         .container {
             max-width: 1448px;

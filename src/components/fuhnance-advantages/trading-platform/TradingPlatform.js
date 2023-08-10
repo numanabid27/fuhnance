@@ -33,7 +33,7 @@ export const TradingPlatform = () => {
                             return (
                                 <div className="grid md:grid-cols-2 grid-cols-1 md:gap-24 gap-12 items-center trade mt-4 md:mt-0 mb-8" key={i.toString()} >
                                     <div>
-                                        <h6 className='text-white text-[20px] mb-2 md:mb-0'>{items.title}</h6>
+                                        <h6 className='text-white text-[20px] mb-2 md:mb-0 pb-4'>{items.title}</h6>
                                         <p className='text-white font-extralight'>{items.desc}</p>
                                         <p className='text-white font-extralight'>{items.desc2}</p>
                                     </div>
